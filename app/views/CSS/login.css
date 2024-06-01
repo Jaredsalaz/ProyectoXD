@@ -1,0 +1,177 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282826;
+    font-family: 'Helvetica', sans-serif; /* Cambia la tipografía a Helvetica */
+    
+}
+
+.w-50 {
+    width: 25%;
+}
+
+.card-title {
+    color: white;
+    text-align: center;
+    
+}
+.card-body {
+    padding: 2em;
+}
+
+.form-group {
+    margin-bottom: 1.5em;
+}
+.password-group {
+    position: relative;
+}
+
+.eye {
+    position: absolute;
+    right: 10px;
+    top: 70%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.btn {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    box-sizing: border-box;
+    background-color: #FF6600;
+    color: white;
+    border-radius: 10px;
+    padding: 0.75em 0;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FF3300;
+}
+
+input {
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    box-sizing: border-box;
+    padding: 1em 0.5em;
+    margin-bottom: 3em;
+}
+label {
+    color: white;
+    padding: 0.2em 1em;
+}
+label, input {
+    display: block;
+}
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 70px;
+    height: auto;
+}
+.logo-superior {
+    position: absolute;
+
+    top: 40px;
+    left: 110px;
+    width: 170px;
+    height: auto;
+}
+@media (max-width: 1000px) {
+    .w-50 {
+        width: 100%;
+    }
+
+    .logo {
+        width: 50px;
+    }
+    .logo-superior {
+        width: 100px;
+    }
+
+    .card-body {
+        padding: 1em;
+    }
+
+    .btn {
+        padding: 0.5em 0;
+        font-size: 0.8em;
+    }
+
+    input {
+        padding: 0.5em 0.25em;
+        margin-bottom: 1.5em;
+    }
+}
+/*Estilo de la alerta */
+.alert {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1em;
+    border: 1px solid #000;
+    background-color: #fff;
+    text-align: center;
+    z-index: 1000;
+    border-radius: 10px;
+    padding: 2em;
+    width: 20%;
+}
+
+.alert i {
+    font-size: 2em;
+    color: #f00;
+}
+.fas.fa-exclamation-triangle {
+    border-radius: 20%;
+    padding: 10px;
+    background-color: #ffb7b7;
+    color: #f00;
+}
+
+.alert p {
+    margin: 1em 1em;
+}
+
+.alert button {
+    padding: 0.7em 1em;
+    border-radius: 10px;
+    background-color: #F00;
+    width: 100%;
+    color: #fff;
+    font-size: medium;
+}
+.input-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.input-wrapper select {
+    appearance: none; /* Oculta el icono de desplegable predeterminado */
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    box-sizing: border-box;
+    padding: 1em 2em 1em 0.5em; /* Aumenta el padding derecho para hacer espacio para el icono personalizado */
+    margin-bottom: 3em;
+}
+
+.input-wrapper i {
+    position: absolute;
+    top: 30%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 1.4em; /* Cambia el tamaño del icono */
+}
