@@ -1,3 +1,4 @@
+// Ojo abierto y cerrado
 function togglePasswordVisibility() {
     var passwordInput = document.getElementById('password');
     var eyeOpen = document.getElementById('eyeOpen');
@@ -15,6 +16,7 @@ function togglePasswordVisibility() {
     }
 }
 
+// Modal alert
 function showAlert() {
     var alertDiv = document.createElement('div');
     alertDiv.className = 'alert';
