@@ -118,3 +118,38 @@ toggle.onclick = function () {
   navigation.classList.toggle("active");
   main.classList.toggle("active");
 };
+
+
+// Selecciona los campos de entrada
+var input1 = document.getElementById('input1');
+var input2 = document.getElementById('input2');
+
+// Selecciona los iconos de "x"
+var icon1 = document.querySelector('#input1 ~ .fa-regular.fa-circle-xmark');
+var icon2 = document.querySelector('#input2 ~ .fa-regular.fa-circle-xmark');
+
+// Escucha el evento 'input' en cada campo de entrada
+input1.addEventListener('input', actualizarLineaCarga);
+input2.addEventListener('input', actualizarLineaCarga);
+
+// Escucha el evento 'click' en cada icono
+icon1.addEventListener('click', actualizarLineaCarga);
+icon2.addEventListener('click', actualizarLineaCarga);
+
+function actualizarLineaCarga() {
+    var camposCompletados = 0;
+    var camposTotales = 2; // Número total de campos de entrada
+
+    // Si el campo de entrada tiene un valor, incrementa camposCompletados
+    if (input1.value !== '') {
+        camposCompletados++;
+    }
+    if (input2.value !== '') {
+        camposCompletados++;
+    }
+
+    var porcentajeCompletado = (camposCompletados / camposTotales) * 100;
+
+    var lineaCarga = document.querySelector('.linea-carga');
+    lineaCarga.style.width = porcentajeCompletado + '%';
+}
