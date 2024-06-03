@@ -171,23 +171,84 @@
             <!-- ================ Order Details List ================= -->
             <div class="details">
                 <div class="recentOrders">
+                    <div class="subtitulo">
+                        <h3><em>Datos del RFC</em></h3>
+                    </div>
                     <div class="cardBox">
-                        <div class="input">
-                            <div class="Tnombre"> Nombre</div>
-                            <input type="text" placeholder="Escriba el nombre" id="input1">
-                            <i class="fa-regular fa-circle-xmark clear-icon" onclick="clearInput('input1')"></i>
-                        </div>
-                        
                         <div class="input">
                             <div class="Tnombre"> RFC</div>
                             <input type="text2" placeholder="Escriba el RFC" id="input2">
                             <i class="fa-regular fa-circle-xmark clear-icon" onclick="clearInput('input2')"></i>
                         </div>
+                        <div class="input">
+                            <div class="Tnombre"> Nombre</div>
+                            <input type="text" placeholder="Escriba el nombre" id="input1">
+                            <i class="fa-regular fa-circle-xmark clear-icon" onclick="clearInput('input1')"></i>
+                        </div>
+                        <div class="input">
+                            <div class="Tnombre"> CURP</div>
+                            <input type="text2" placeholder="Escriba la CURP" id="input2">
+                            <i class="fa-regular fa-circle-xmark clear-icon" onclick="clearInput('input2')"></i>
+                        </div>
+                        
                     </div>
-                    <div class="boton-buscar">
-                        <br>
-                        <button type="button" onclick="showAlert()">Buscar</button>
+                    <div class="subtitulo">
+                        <h3><em>Datos Persoanles</em></h3>
                     </div>
+                    <div class="cardBox2">
+                        <div class="input">
+                            <div class="Tnombre"> Sexo</div>
+                                <div style="display: flex; padding-top: 5px;">
+                                    <div style="padding-right: 50px;">
+                                        <input type="checkbox" id="si" name="sexo" value="si">
+                                        <label for="si" style="margin-left: 10px;">Sí</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="no" name="sexo" value="no">
+                                        <label for="no" style="margin-left: 10px;">No</label>
+                                    </div>
+                                </div>
+                            <i class="fa-regular fa-circle-xmark clear-icon" onclick="clearInput('input2')"></i>
+                        </div>
+                        <div class="input">
+                            <div class="Tnombre">Estado Civil</div>
+                            <select id="input2">
+                                <option value="" disabled>Escriba el Estado Civil</option>
+                                <option value="soltero" selected>Soltero</option>
+                                <option value="casado">Casado</option>
+                                <!-- Agregar más opciones -->
+                            </select>
+                            <i class="fa-regular fa-circle-xmark clear-icon" onclick="clearInput('input2')"></i>
+                        </div>
+                        <div class="input">
+                            <div class="Tnombre">Email</div>
+                            <input type="text" placeholder="Escriba el Email" id="input1">
+                            <i class="fa-regular fa-circle-xmark clear-icon" onclick="clearInput('input1')"></i>
+                        </div>
+                        <div class="input">
+                            <div class="Tnombre">Telefono</div>
+                            <input type="text2" placeholder="Escriba el Telefono" id="input2">
+                            <i class="fa-regular fa-circle-xmark clear-icon" onclick="clearInput('input2')"></i>
+                        </div>
+                        
+                    </div>
+                    <div class="cardBox">
+                        <div class="input">
+                            <div class="Tnombre">Celular</div>
+                            <input type="text2" placeholder="Escriba el Celular" id="input2">
+                            <i class="fa-regular fa-circle-xmark clear-icon" onclick="clearInput('input2')"></i>
+                        </div>
+                        <div class="input">
+                            <div class="Tnombre">Tel.Recados</div>
+                            <input type="text" placeholder="Escriba el Tel.Recados" id="input1">
+                            <i class="fa-regular fa-circle-xmark clear-icon" onclick="clearInput('input1')"></i>
+                        </div>
+                        <div class="boton-buscar">
+                            <button type="button" onclick="showAlert()">Guardar</button>
+                        </div>
+                    </div>
+                    
+                    
                 </div>
 
                 <!-- ================= New Customers ================ -->
@@ -196,7 +257,7 @@
     </div>
 
     <!-- =========== Scripts =========  -->
-    <script src="JS/main.js"></script>
+    <script src="JS/NuevoRP.js"></script>
 
     <!-- ====== ionicons ======= -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

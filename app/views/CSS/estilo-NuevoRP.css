@@ -399,6 +399,47 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px;
+  
+}
+.cardBox2 {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+    
+}
+
+.subtitulo {
+  position: relative;
+  width: 100%;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: -20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  color: #FF6600;
+  
+}
+.input div {
+    display: flex;
+    align-items: center;
+}
+
+.input input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    border: 2px solid #282826;
+    cursor: pointer;
+}
+
+.input input[type="checkbox"]:checked {
+    background: #282826;
 }
 /*Inputs */
 .Tnombre {
@@ -412,6 +453,7 @@ body {
 }
 .input {
   position: relative;
+  padding-top: 0px;
 }
 .clear-icon {
   display: none;
@@ -425,7 +467,7 @@ body {
   font-size: 1.5em;
 }
 .input input[type="text"] {
-  width: 105%;
+  width: 100%;
   padding: 13px;
   border-radius: 10px;
   border: 1px solid #ccc;
@@ -454,9 +496,29 @@ body {
   border-color: #FF6600;
   box-shadow: 0 0 10px #FF6600;
 }
+.input select {
+    width: 100%;
+    padding: 13px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #282826;
+    color: #fff; 
+    appearance: none;
+}
+
+.input select:focus {
+    border-color: #FF6600;
+    box-shadow: 0 0 10px #FF6600;
+}
 .boton-buscar {
   width: 100%;
-  display: grid;
+  height: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-top: 12%;
 }
 .boton-buscar button {
   width: 40%; 
@@ -515,19 +577,6 @@ body {
   border: 0.5px solid #282826;
   overflow-x: auto;
 }
-.details table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 0px;
-  border-radius: 40px;
-}
-.details table thead {
-  background-color: #282826;
-  color: #fff;
-  top : -20px;
-  border-radius: 40px;
-  text-align: center;
-}
 .icon-container {
   display: flex;
   justify-content: center;
@@ -540,51 +589,6 @@ body {
   border: 1px solid #fec453;
   border-radius: 50px;
   font-size: 1.4em;
-}
-
-.details table tr td {
-  border-right: 1px solid #ffffff; /* Agrega una línea a la derecha de cada td */
-}
-.details table tbody tr td {
-  border-right: 1px solid #fff1d7;
-}
-
-
-.details table tr td:last-child {
-  border-right: none; /* Elimina la línea a la derecha del último td */
-  text-align: end;
-}
-.details table thead td {
-  font-weight: 600;
-  color: #fff;
-  text-align: center;
-  align-items: center;
-  font-size: 14px;
-}
-.details .recentOrders table tr {
-  color: var(--black1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.details .recentOrders table tr:last-child {
-  border-bottom: none;
-}
-
-.details .recentOrders table tbody tr:hover {
-  background: #f2f2f2;
-  color: var(--black1);
-}
-.details .recentOrders table tr td {
-  padding: 10px;
-}
-.details .recentOrders table tr td:last-child {
-  text-align: end;
-}
-.details .recentOrders table tr td:nth-child(2) {
-  text-align: end;
-}
-.details .recentOrders table tr td:nth-child(3) {
-  text-align: center;
 }
 /*Estilo de la alerta */
 .alert {
@@ -687,6 +691,9 @@ body {
   .cardBox {
     grid-template-columns: repeat(2, 1fr);
   }
+  .cardBox2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
@@ -703,6 +710,9 @@ body {
 
 @media (max-width: 480px) {
   .cardBox {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cardBox2 {
     grid-template-columns: repeat(1, 1fr);
   }
   .cardHeader h2 {
