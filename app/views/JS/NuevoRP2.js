@@ -5,24 +5,7 @@
     var alertDiv = document.createElement('div');
     alertDiv.className = 'alert';
     alertDiv.innerHTML = `
-      <i class="fas fa-exclamation-triangle"></i>
-      <p>La busqueda no arrojo ningun resultado, <br>Por favor revise su criterio de busqueda</p>
-      <button onclick="closeAlert()">Aceptar</button>
-    `;
-    document.body.appendChild(alertDiv);
-  }
-  
-  function closeAlert() {
-    var alertDiv = document.querySelector('.alert');
-    document.body.removeChild(alertDiv);
-    showSecondAlert();
-  }
-  
-  function showSecondAlert() {
-    var alertDiv = document.createElement('div');
-    alertDiv.className = 'alert';
-    alertDiv.innerHTML = `
-      <i class="fas fa-question-circle icon"></i> <!-- Agrega la clase 'icon' -->
+      <i class="fas fa-check-circle icon"></i>
       <p>No se encontro el RFC solicitado, <br>¿Desea adherirlo al fondo?</p>
       <div class="button-container">
         <button onclick="closeSecondAlert()">Cancelar</button>

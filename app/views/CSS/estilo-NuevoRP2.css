@@ -637,13 +637,14 @@ body {
 
 .alert i {
   font-size: 2em;
-  color: #f00;
+  color: #008000; /* Cambia el color del ícono a verde */
 }
-.fas.fa-exclamation-triangle {
+
+.fas.fa-check-circle {
   border-radius: 20%;
   padding: 10px;
-  background-color: #ffb7b7;
-  color: #f00;
+  background-color: #00ee38; /* Cambia el color de fondo a un verde claro */
+  color: #008000; /* Cambia el color del ícono a verde */
 }
 
 .alert p {
@@ -653,7 +654,7 @@ body {
 .alert button {
   padding: 0.7em 1em;
   border-radius: 10px;
-  background-color: #F00;
+  background-color: #008000;
   width: 90%;
   color: #fff;
   font-size: medium;
@@ -673,14 +674,14 @@ body {
 }
 
 .alert .button-container button:last-child {
-  background-color: #FFAA04; /* Cambia el color de fondo del segundo botón a verde */
+  background-color: #709c86; /* Cambia el color de fondo del segundo botón a verde */
   border: none; /* Elimina el borde del segundo botón */
 }
 .alert .icon {
-  background-color: #fff1d7; /* Cambia el color de fondo a rojo */
+  background-color: #d5ecd8; /* Cambia el color de fondo a rojo */
   border-radius: 10px; /* Hace que el icono sea redondo */
   padding: 10px; /* Agrega espacio alrededor del icono */
-  color: #ffaa04;
+  color: #709c86;
 }
 
 /* Estilos para pantallas de tabletas y móviles */
