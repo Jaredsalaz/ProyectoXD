@@ -8,7 +8,7 @@
     <title>Responsive Admin Dashboard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!-- ======= Styles ====== -->
-    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/estilo-NuevoRP2.css">
 </head>
 
 <body>
@@ -128,6 +128,7 @@
                     <h2>Hola, Jhovanny</h2>
                 </div>
 
+
                 <div class="campana">
                     <i class="fas fa-bell"></i> <!-- Icono de campana -->
                     <div class="notification-dot"></div> <!-- Punto de notificación -->
@@ -144,141 +145,82 @@
                 <p class="nombre-usuario">Jhovanni Torres</p> <!-- Nombre del usuario -->
                 <p class="titulo-usuario">Encargado</p> <!-- Título del usuario -->
             </div>
+
+            <div class="title">
+                <h2><em>NUEVO REGISTRO DE PERSONA</em></h2>
+            </div>
+
+            <div class="segundo-encabezado">
+                <div class="domicilio">
+                    <i class="fa-solid fa-1"></i>
+                    <h3>Datos</h3>
+                </div>
+                <div class="linea-horizontal">
+                    <div class="linea-carga"></div> <!-- Línea de carga -->
+                </div>
+                <div class="Icono-lapiz">
+                    <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
+                    <h3>Domicilio</h3>
+                </div>
+            </div>
         
 
             <!-- ======================= Cards ================== -->
-            <div class="cardBox">
-                <div class="input">
-                    <div class="Tnombre"> Nombre</div>
-                    <input type="text" placeholder="Escriba el nombre" id="input1">
-                    <i class="fa-regular fa-circle-xmark clear-icon" onclick="clearInput('input1')"></i>
-                </div>
-                
-                <div class="input">
-                    <div class="Tnombre"> RFC</div>
-                    <input type="text2" placeholder="Escriba el RFC" id="input2">
-                    <i class="fa-regular fa-circle-xmark clear-icon" onclick="clearInput('input2')"></i>
-                </div>
-
-                <div class="boton-buscar">
-                    <br>
-                    <button type="button" onclick="showAlert()">Buscar</button>
-                </div>
-            </div>
+            
 
             <!-- ================ Order Details List ================= -->
             <div class="details">
                 <div class="recentOrders">
+                    <div class="subtitulo">
+                        <h3><em>Datos del domicilio</em></h3>
+                    </div>
+                    <div class="cardBox2">
+                        <div class="input">
+                            <div class="Tnombre">Calle</div>
+                            <input type="text" placeholder="Escriba la Calle" id="inputCalle">
+                        </div>
+                        <div class="input">
+                            <div class="Tnombre">Nº. Exterior</div>
+                            <input type="text" placeholder="Escriba el Nº. Exterior" id="inputExterior">
+                        </div>
+                        <div class="input">
+                            <div class="Tnombre">Nº. Interior</div>
+                            <input type="text" placeholder="Escriba el Nº. Interior" id="inputInterior">
+                        </div>
+                        <div class="input">
+                            <div class="Tnombre">Código postal</div>
+                            <input type="text" placeholder="Escriba el código postal" id="inputPostal">
+                        </div>
+                        
+                    </div>
+                    <div class="cardBox2">
+                        <div class="input">
+                            <div class="Tnombre">Colonia</div>
+                            <input type="text" placeholder="Escriba la Colonia" id="inputColonia">
+                        </div>
+                        <div class="input">
+                            <div class="Tnombre">Estado Dom.</div>
+                            <input type="text" placeholder="Escriba el Estado Dom." id="inputEstado">
+                        </div>
+                        <div class="input">
+                            <div class="Tnombre">Municipio</div>
+                            <input type="text" placeholder="Escriba el Municipio" id="inputMunicipio">
+                        </div>
+                        
+                    </div>
+                    <div class="cardBox">
+                        <div class="boton-atras">
+                            <button type="button-atras" onclick="history.back()">Atras</button>
+                        </div>
+                        <div class="boton-buscar">
+                            <button type="button" onclick="showAlert()">Guardar</button>
+                        </div>
+                        
+                    </div>
 
-                    <table>
-                        <thead>
-                            <tr>
-                                <td>Fraude</td>
-                                <td>RFC</td>
-                                <td>CURP</td>
-                                <td>Nombre</td>
-                                <td>Informacion del maestro</td>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td>9834584958</td>
-                                <td>DIWEJC3293DN</td>
-                                <td>WHDJWJ934498RFFE3</td>
-                                <td>Emma Alejandra Pascacio Gomez</td>
-                                <td>
-                                    <div class="icon-container">
-                                        <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>93940323</td>
-                                <td>XNIWE9NC9</td>
-                                <td>UIFNBV933RR933F</td>
-                                <td>Amado Grajales Cortez</td>
-                                <td>
-                                    <div class="icon-container">
-                                        <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>299842221</td>
-                                <td>NCENW29NE</td>
-                                <td>HXIXHHEH822C2XJ</td>
-                                <td>Jacob Little Jhons</td>
-                                <td>
-                                    <div class="icon-container">
-                                        <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>983927212</td>
-                                <td>JDC92CM92C2</td>
-                                <td>CJIDJ93ICN39</td>
-                                <td>Paula Sandoval Ruiz</td>
-                                <td>
-                                    <div class="icon-container">
-                                        <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>Star Refrigerator</td>
-                                <td>$1200</td>
-                                <td>Paid</td>
-                                <td><span class="status delivered">Delivered</span></td>
-                                <td>
-                                    <div class="icon-container">
-                                        <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>Dell Laptop</td>
-                                <td>$110</td>
-                                <td>Due</td>
-                                <td><span class="status pending">Pending</span></td>
-                                <td>
-                                    <div class="icon-container">
-                                        <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>Apple Watch</td>
-                                <td>$1200</td>
-                                <td>Paid</td>
-                                <td><span class="status return">Return</span></td>
-                                <td>
-                                    <div class="icon-container">
-                                        <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>Addidas Shoes</td>
-                                <td>$620</td>
-                                <td>Due</td>
-                                <td><span class="status inProgress">In Progress</span></td>
-                                <td>
-                                    <div class="icon-container">
-                                        <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
-                                    </div>
-                                </td> 
-                            </tr>
-                        </tbody>
-                    </table>
+                    
+                    
+                    
                 </div>
 
                 <!-- ================= New Customers ================ -->
@@ -287,7 +229,7 @@
     </div>
 
     <!-- =========== Scripts =========  -->
-    <script src="JS/main.js"></script>
+    <script src="JS/NuevoRP2.js"></script>
 
     <!-- ====== ionicons ======= -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

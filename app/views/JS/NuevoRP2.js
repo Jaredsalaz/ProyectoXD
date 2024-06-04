@@ -1,42 +1,4 @@
-  function redirigir() {
-    window.location.href = 'NuevoRegistroP2.html'; 
-  }
-  
-  
-  //Mayusculas en el input del RFC y CURP 
-  // Transforma el texto ingresado a mayúsculas
-  // Selecciona los campos de entrada de RFC y CURP
-  var inputRFC = document.getElementById('inputRFC');
-  var inputCURP = document.getElementById('inputCURP');
 
-  // Escucha el evento 'input' en los campos de entrada
-  inputRFC.addEventListener('input', convertirAMayusculas);
-  inputCURP.addEventListener('input', convertirAMayusculas);
-
-  function convertirAMayusculas() {
-      // Convierte el valor del campo de entrada a mayúsculas
-      this.value = this.value.toUpperCase();
-  }
-  
-  //Input icono de X 
-  // funcion para limpiar el input 
-  function clearInput(inputId) {
-    var input = document.getElementById(inputId);
-    input.value = '';
-    input.nextElementSibling.style.display = 'none'; // Oculta el icono después de borrar el texto
-  }
-  
-  // Muestra u oculta el icono según si hay texto en el input
-  function toggleIcon(inputId) {
-    var input = document.getElementById(inputId);
-    var icon = input.nextElementSibling;
-    icon.style.display = input.value ? 'inline' : 'none';
-  }
-  
-  // Añade event listeners a los inputs para mostrar u ocultar el icono
-  document.getElementById('input1').addEventListener('input', function() { toggleIcon('input1'); });
-  document.getElementById('input2').addEventListener('input', function() { toggleIcon('input2'); });
-  
   
   //Modal alert
   function showAlert() {
@@ -130,7 +92,7 @@
   };
   
   // Selecciona todos los campos de entrada
-var inputs = document.querySelectorAll('.input input, .input select');
+var inputs = document.querySelectorAll('.input input');
 
 // Selecciona la barra de carga
 var lineaCarga = document.querySelector('.linea-carga');

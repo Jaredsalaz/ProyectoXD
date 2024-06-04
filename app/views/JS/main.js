@@ -54,10 +54,14 @@ function showSecondAlert() {
     <p>No se encontro el RFC solicitado, <br>¿Desea adherirlo al fondo?</p>
     <div class="button-container">
       <button onclick="closeSecondAlert()">Cancelar</button>
-      <button onclick="closeSecondAlert()">Aceptar</button>
+      <button onclick="redirigir()">Aceptar</button>
     </div>
   `;
   document.body.appendChild(alertDiv);
+}
+
+function redirigir() {
+    window.location.href = 'NuevoRegistroP.html'; 
 }
 
 function closeSecondAlert() {
