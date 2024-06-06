@@ -8,7 +8,7 @@
     <title>Responsive Admin Dashboard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!-- ======= Styles ====== -->
-    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/menu.css">
 </head>
 
 <body>
@@ -144,144 +144,124 @@
                 <p class="nombre-usuario">Jhovanni Torres</p> <!-- Nombre del usuario -->
                 <p class="titulo-usuario">Encargado</p> <!-- Título del usuario -->
             </div>
-        
-
-            <!-- ======================= Cards ================== -->
-            <div class="cardBox">
-                <div class="input">
-                    <div class="Tnombre"> Nombre</div>
-                    <input type="text" placeholder="Escriba el nombre" id="input1">
-                    <i class="fa-regular fa-circle-xmark clear-icon" onclick="clearInput('input1')"></i>
-                </div>
-                
-                <div class="input">
-                    <div class="Tnombre"> RFC</div>
-                    <input type="text2" placeholder="Escriba el RFC" id="input2">
-                    <i class="fa-regular fa-circle-xmark clear-icon" onclick="clearInput('input2')"></i>
-                </div>
-
-                <div class="boton-buscar">
-                    <br>
-                    <button type="button" onclick="showAlert()">Buscar</button>
-                </div>
-            </div>
-
             <!-- ================ Order Details List ================= -->
             <div class="details">
                 <div class="recentOrders">
-
-                    <table>
-                        <thead>
-                            <tr>
-                                <td>Fraude</td>
-                                <td>RFC</td>
-                                <td>CURP</td>
-                                <td>Nombre</td>
-                                <td>Informacion del maestro</td>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td>9834584958</td>
-                                <td>DIWEJC3293DN</td>
-                                <td>WHDJWJ934498RFFE3</td>
-                                <td>Emma Alejandra Pascacio Gomez</td>
-                                <td>
-                                    <div class="icon-container">
-                                        <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>93940323</td>
-                                <td>XNIWE9NC9</td>
-                                <td>UIFNBV933RR933F</td>
-                                <td>Amado Grajales Cortez</td>
-                                <td>
-                                    <div class="icon-container">
-                                        <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>299842221</td>
-                                <td>NCENW29NE</td>
-                                <td>HXIXHHEH822C2XJ</td>
-                                <td>Jacob Little Jhons</td>
-                                <td>
-                                    <div class="icon-container">
-                                        <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>983927212</td>
-                                <td>JDC92CM92C2</td>
-                                <td>CJIDJ93ICN39</td>
-                                <td>Paula Sandoval Ruiz</td>
-                                <td>
-                                    <div class="icon-container">
-                                        <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>Star Refrigerator</td>
-                                <td>$1200</td>
-                                <td>Paid</td>
-                                <td><span class="status delivered">Delivered</span></td>
-                                <td>
-                                    <div class="icon-container">
-                                        <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>Dell Laptop</td>
-                                <td>$110</td>
-                                <td>Due</td>
-                                <td><span class="status pending">Pending</span></td>
-                                <td>
-                                    <div class="icon-container">
-                                        <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>Apple Watch</td>
-                                <td>$1200</td>
-                                <td>Paid</td>
-                                <td><span class="status return">Return</span></td>
-                                <td>
-                                    <div class="icon-container">
-                                        <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>Addidas Shoes</td>
-                                <td>$620</td>
-                                <td>Due</td>
-                                <td><span class="status inProgress">In Progress</span></td>
-                                <td>
-                                    <div class="icon-container">
-                                        <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
-                                    </div>
-                                </td> 
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="cardBox">
+                        <div class="card">
+                            <div>
+                                <div class="numbers">1,504</div>
+                                <div class="cardName">Daily Views</div>
+                            </div>
+        
+                            <div class="iconBx">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+                        </div>
+        
+                        <div class="card">
+                            <div>
+                                <div class="numbers">80</div>
+                                <div class="cardName">Sales</div>
+                            </div>
+        
+                            <div class="iconBx">
+                                <ion-icon name="cart-outline"></ion-icon>
+                            </div>
+                        </div>
+        
+                        <div class="card">
+                            <div>
+                                <div class="numbers">284</div>
+                                <div class="cardName">Comments</div>
+                            </div>
+        
+                            <div class="iconBx">
+                                <ion-icon name="chatbubbles-outline"></ion-icon>
+                            </div>
+                        </div>
+        
+                        <div class="card">
+                            <div>
+                                <div class="numbers">$7,842</div>
+                                <div class="cardName">Earning</div>
+                            </div>
+        
+                            <div class="iconBx">
+                                <ion-icon name="cash-outline"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- ================= New Customers ================ -->
+                <div class="recentCustomers">
+                    <div class="profile-container">
+                        <img src="img/Foto-perfil.png" alt="Foto de perfil" class="profile-pic">
+                        <div class="button-container">
+                            <button class="eye-button"><i class="fas fa-eye"></i></button>
+                            <button class="edit-button">Editar</button>
+                        </div>
+                    </div>
+                    <div class="info-container">
+                        <div class="info-item">
+                            <i class="fa-regular fa-user user-icon"></i>
+                            <div class="info-text">
+                                <div class="info-titulo">
+                                    <p>Nombre</p>
+                                </div>
+                                <div class="info-nombre">
+                                    <p class="nombre">Juan Diego</p>
+                                    <p class="apellido">Pérez López</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-regular fa-heart corazon-icon"></i>
+                            <div class="info-text">
+                                <div class="info-titulo">
+                                    <p>Estado civil</p>
+                                </div>
+                                <div class="info-nombre">
+                                    <p class="nombre">Soltero</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-mobile-screen movil-icon"></i>
+                            <div class="info-text">
+                                <div class="info-titulo">
+                                    <p>Celular</p>
+                                </div>
+                                <div class="info-nombre">
+                                    <p class="nombre">9614734865</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot GPS-icon"></i>
+                            <div class="info-text">
+                                <div class="info-titulo">
+                                    <p>Municipio</p>
+                                </div>
+                                <div class="info-nombre">
+                                    <p class="nombre">Tuxtla Gutierrez</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-map-pin pin-icon"></i>
+                            <div class="info-text">
+                                <div class="info-titulo">
+                                    <p>Colonia</p>
+                                </div>
+                                <div class="info-nombre">
+                                    <p class="nombre">Casitas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
