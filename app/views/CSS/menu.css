@@ -359,32 +359,42 @@ body {
   cursor: pointer;
   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
 }
-
-.cardBox .card .numbers {
-  position: relative;
-  font-weight: 500;
-  font-size: 2.5rem;
-  color: var(--blue);
+.card {
+    position: relative;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex; /* Cambia 'flex-direction' a 'flex' para orientar los elementos en filas */
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
 }
 
-.cardBox .card .cardName {
-  color: var(--black2);
-  font-size: 1.1rem;
-  margin-top: 5px;
+.profile-container {
+    display: flex;
+    flex-direction: column; /* Añade 'flex-direction: column' para orientar los elementos en columnas */
+    align-items: flex-start;
+    justify-content: center;
+    margin-right: 20px; /* Añade un margen a la derecha para separar la foto del título y los botones */
+    margin-top: -25px;
 }
 
-.cardBox .card .iconBx {
-  font-size: 3.5rem;
-  color: var(--black2);
+.title-button-container {
+    display: flex;
+    flex-direction: column; /* Añade 'flex-direction: column' para orientar los elementos en columnas */
+    align-items: flex-start; /* Alinea los elementos al inicio del contenedor */
 }
 
-.cardBox .card:hover {
-  background: var(--blue);
+.profile-picture {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%; /* Hace que la foto de perfil sea circular */
+    margin-right: 10px;
 }
-.cardBox .card:hover .numbers,
-.cardBox .card:hover .cardName,
-.cardBox .card:hover .iconBx {
-  color: var(--white);
+
+.title-card{
+    font-size: 20px;
+    font-weight: bold;
 }
 
 /* ================== Order Details List ============== */
@@ -567,8 +577,6 @@ body {
     color: #FF6600;
     margin-top: -5px;
 }
-
-
 /* ====================== Responsive Design ========================== */
 @media (max-width: 991px) {
   .navigation {

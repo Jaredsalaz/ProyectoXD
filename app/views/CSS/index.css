@@ -377,19 +377,11 @@ body {
   padding-top: 10px;
   color: #FF6600;
 }
-.Icono-lapiz .fa-pencil-alt{
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 15px;
-  color: #ffffff;
+.fas.fa-pencil-alt {
+  cursor: pointer;
+
 }
-.domicilio .fa-solid.fa-2 {
-  padding: 10px;
-  background-color: #000000;
-  color: #ffffff;
-  border-radius: 50%;
-  font-size: .9em;
-}
+
 
 
 .cardBox {
@@ -536,10 +528,11 @@ body {
 
 .fas.fa-pencil-alt {
   padding: 6px;
-  background-color: #FF6600;
-  border: 1px solid #fec453;
-  border-radius: 50px;
+  background-color: #FFF1d5;
+  border: 2.5px solid #ffb01b;
+  border-radius: 15px;
   font-size: 1.4em;
+  color: #ffb01b;
 }
 
 .details table tr td {
