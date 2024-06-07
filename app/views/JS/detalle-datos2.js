@@ -1,10 +1,12 @@
 
-  //flecha para regresar a la pagina anterior
-  let backButton = document.querySelector(".fecha-back");
+  
 
-  backButton.onclick = function () {
-    window.history.back();
-  };
+
+
+
+  function redirigir() {
+    window.location.href = 'menu.html';
+  }
   
   
   // Campana de notificación y menu de notificaciones
@@ -38,33 +40,27 @@
   });
   
   
-// add hovered class to selected list item
-let list = document.querySelectorAll(".navigation li");
-
-function activeLink() {
-  list.forEach((item) => {
-    item.classList.remove("hovered");
-  });
-  this.classList.add("hovered");
-}
-
-list.forEach((item) => item.addEventListener("mouseover", activeLink));
-
-// Menu Toggle
-let toggle = document.querySelector(".toggle");
-let navigation = document.querySelector(".navigation");
-let main = document.querySelector(".main");
-
-// Add 'active' class to navigation and main when the page loads
-window.onload = function() {
-  navigation.classList.add("active");
-  main.classList.add("active");
-};
-
-toggle.onclick = function () {
-  navigation.classList.toggle("active");
-  main.classList.toggle("active");
-};
+  // add hovered class to selected list item
+  let list = document.querySelectorAll(".navigation li");
+  
+  function activeLink() {
+    list.forEach((item) => {
+      item.classList.remove("hovered");
+    });
+    this.classList.add("hovered");
+  }
+  
+  list.forEach((item) => item.addEventListener("mouseover", activeLink));
+  
+  // Menu Toggle
+  let toggle = document.querySelector(".toggle");
+  let navigation = document.querySelector(".navigation");
+  let main = document.querySelector(".main");
+  
+  toggle.onclick = function () {
+    navigation.classList.toggle("active");
+    main.classList.toggle("active");
+  };
   
   // Selecciona todos los campos de entrada
 var inputs = document.querySelectorAll('.input input');

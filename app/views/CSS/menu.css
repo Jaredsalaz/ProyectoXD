@@ -455,7 +455,19 @@ body {
     font-size: 20px;
     font-weight: bold;
 }
-
+.flecha-atras {
+  display: flex;
+  align-items: center;
+  justify-content: flex;
+  margin-left: 4%;
+  overflow: hidden;
+  z-index: 5;
+  cursor: pointer;
+}
+.fecha-back{
+  font-size: 20px;
+  color: #FF6600;
+}
 /* ================== Order Details List ============== */
 .details {
   position: relative;
