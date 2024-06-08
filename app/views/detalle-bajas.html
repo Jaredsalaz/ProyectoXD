@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="CSS/detalle-bajas.css">
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <img class="large-logo" src="img/Logo fabes blanco.png" alt="Large Logo">
+                            <img class="small-logo" src="img/Icono fabes blanco.png" alt="Small Logo">
+                        </span>
+                    </a>
+                    
+                </li>
+
+                <li class="hovered">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Inicio</span>
+                        <i class="fas fa-chevron-down inicio-icon"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">Usuario</span>
+                        <i class="fas fa-chevron-down usuario-icon"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="card-outline"></ion-icon>
+                        </span>
+                        <span class="title">Adm Créditos</span>
+                        <i class="fas fa-chevron-down adm-icon"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="pie-chart-outline"></ion-icon>
+                        </span>
+                        <span class="title">Reportes</span>
+                        <i class="fas fa-chevron-down reportes-icon"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="logo-usd"></ion-icon>
+                        </span>
+                        <span class="title">Prestamos</span>
+                        <i class="fas fa-chevron-down prestamos-icon"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="folder-outline"></ion-icon>
+                        </span>
+                        <span class="title">Administración</span>
+                        <i class="fas fa-chevron-down administracion-icon"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                        </span>
+                        <span class="title">Mobile</span>
+                        <i class="fas fa-chevron-down mobile-icon"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">Configuración</span>
+                        <i class="fas fa-chevron-down confi-icon"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Cerrar Sesión</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <div class="nombre">
+                    <h2>Hola, Jhovanny</h2>
+                </div>
+
+
+                <div class="campana">
+                    <i class="fas fa-bell"></i> <!-- Icono de campana -->
+                    <div class="notification-dot"></div> <!-- Punto de notificación -->
+                    <div id="notification-modal" class="modal"> <!-- Modal de notificación -->
+                        <i class="fas fa-times close"></i> <!-- Botón de cierre con icono -->
+                        <p>Tienes una nueva notificación</p> <!-- Notificación de prueba -->
+                        <p>Un cliente</p>
+                    </div>
+                </div>
+
+                <div class="user">
+                    <img src="img/customer01.jpg" alt="">
+                </div>
+                <p class="nombre-usuario">Jhovanni Torres</p> <!-- Nombre del usuario -->
+                <p class="titulo-usuario">Encargado</p> <!-- Título del usuario -->
+            </div>
+
+            <div class="title">
+                <i class="fa-solid fa-chevron-left" onclick="window.history.back();"></i>
+                <h2><em>DETALLE DE LA BAJA</em></h2>
+            </div>
+        
+
+            <!-- ======================= Cards ================== -->
+            
+
+            <!-- ================ Order Details List ================= -->
+            <div class="details">
+                <div class="recentOrders">
+                    
+                    
+                    <div class="cardBox2">
+
+                        
+                        <div class="input">
+                            <div class="Tnombre">Tipo de baja</div>
+                            <div class="select-container">
+                                <select id="input2">
+                                    <option value="" disabled>Seleccione el descuento</option>
+                                    <option value="soltero" selected>Temporal</option>
+                                    <option value="casado">Permanente</option>
+                                    <!-- Agregar más opciones -->
+                                </select>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div>
+                        <div class="input">
+                            <div class="Tnombre">Fecha de baja</div>
+                            <input type="text" placeholder="" id="inputEnvio">
+                        </div>
+                        <div class="input">
+                            <div class="Tnombre"></div>
+                            <br>
+                            <i class="fa-solid fa-calendar-days"></i>
+                            
+                        </div>
+                    </div>
+
+                    <div class="cardBox">
+                        
+                        <div class="input2">
+                            <div class="Tnombre">Objetivo de la baja</div>
+                            <textarea id="input1" placeholder="" rows="4" cols="50"></textarea>
+                        </div>
+                        
+                    </div>
+                    
+                    
+                    
+                    
+                </div>
+
+                <!-- ================= New Customers ================ -->
+            </div>
+        </div>
+    </div>
+
+    <!-- =========== Scripts =========  -->
+    <script src="JS/detalle-bajas.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
