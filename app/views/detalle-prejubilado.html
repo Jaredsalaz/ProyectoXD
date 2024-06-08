@@ -148,7 +148,7 @@
 
             <div class="title">
                 <i class="fa-solid fa-chevron-left" onclick="window.history.back();"></i>
-                <h2><em>DETALLE DE LA BAJA</em></h2>
+                <h2><em>DETALLE DE PREJUBILADO</em></h2>
             </div>
         
 
@@ -162,35 +162,31 @@
                     
                     <div class="cardBox2">
 
-                        
-                        <div class="input">
-                            <div class="Tnombre">Tipo de baja</div>
-                            <div class="select-container">
-                                <select id="input2">
-                                    <option value="" disabled>Seleccione el descuento</option>
-                                    <option value="soltero" selected>Temporal</option>
-                                    <option value="casado">Permanente</option>
-                                    <!-- Agregar más opciones -->
-                                </select>
-                                <i class="fa-solid fa-angle-down"></i>
-                            </div>
+                        <div class="input-gris">
+                            <div class="Tnombre">Fecha de la constancia</div>
+                            <input type="text" value="20 - 04 - 2024" id="inputFecha" readonly>
                         </div>
+                    </div>
+                    <div class="cardBox2">
                         <div class="input">
-                            <div class="Tnombre">Fecha de baja</div>
-                            <input type="text" placeholder="" id="inputEnvio">
-                        </div>
-                        <div class="input">
-                            <div class="Tnombre"></div>
-                            <br>
-                            <i class="fa-solid fa-calendar-days"></i>
+                            <div class="Tnombre">Prejubilado</div>
+                                <div style="display: flex; padding-top: 5px;">
+                                    <div style="padding-right: 50px;">
+                                        <input type="checkbox" id="si" name="sexo" value="si">
+                                        <label for="si" style="margin-left: 10px;">Si</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="no" name="sexo" value="no">
+                                        <label for="no" style="margin-left: 10px;">No</label>
+                                    </div>
+                                </div>
                             
                         </div>
                     </div>
-
                     <div class="cardBox">
                         
                         <div class="input2">
-                            <div class="Tnombre">Objetivo de la baja</div>
+                            <div class="Tnombre">Observacón del prejubilado</div>
                             <textarea id="input1" placeholder="" rows="8" cols="50"></textarea>
                         </div>
                         
