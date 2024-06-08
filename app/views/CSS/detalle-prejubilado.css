@@ -382,13 +382,12 @@ body {
   position: relative;
   width: auto;
   max-width: 90%;
-  margin-left: 280px;
+  margin-left: 180px;
   margin-right: 280px;
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 40px;
-  
 }
 .cardBox2 {
     position: relative;
