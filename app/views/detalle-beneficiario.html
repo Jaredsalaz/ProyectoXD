@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="CSS/detalle-beneficiario.css">
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <img class="large-logo" src="img/Logo fabes blanco.png" alt="Large Logo">
+                            <img class="small-logo" src="img/Icono fabes blanco.png" alt="Small Logo">
+                        </span>
+                    </a>
+                    
+                </li>
+
+                <li class="hovered">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Inicio</span>
+                        <i class="fas fa-chevron-down inicio-icon"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">Usuario</span>
+                        <i class="fas fa-chevron-down usuario-icon"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="card-outline"></ion-icon>
+                        </span>
+                        <span class="title">Adm Créditos</span>
+                        <i class="fas fa-chevron-down adm-icon"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="pie-chart-outline"></ion-icon>
+                        </span>
+                        <span class="title">Reportes</span>
+                        <i class="fas fa-chevron-down reportes-icon"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="logo-usd"></ion-icon>
+                        </span>
+                        <span class="title">Prestamos</span>
+                        <i class="fas fa-chevron-down prestamos-icon"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="folder-outline"></ion-icon>
+                        </span>
+                        <span class="title">Administración</span>
+                        <i class="fas fa-chevron-down administracion-icon"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                        </span>
+                        <span class="title">Mobile</span>
+                        <i class="fas fa-chevron-down mobile-icon"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">Configuración</span>
+                        <i class="fas fa-chevron-down confi-icon"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Cerrar Sesión</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <div class="nombre">
+                    <h2>Hola, Jhovanny</h2>
+                </div>
+
+
+                <div class="campana">
+                    <i class="fas fa-bell"></i> <!-- Icono de campana -->
+                    <div class="notification-dot"></div> <!-- Punto de notificación -->
+                    <div id="notification-modal" class="modal"> <!-- Modal de notificación -->
+                        <i class="fas fa-times close"></i> <!-- Botón de cierre con icono -->
+                        <p>Tienes una nueva notificación</p> <!-- Notificación de prueba -->
+                        <p>Un cliente</p>
+                    </div>
+                </div>
+
+                <div class="user">
+                    <img src="img/customer01.jpg" alt="">
+                </div>
+                <p class="nombre-usuario">Jhovanni Torres</p> <!-- Nombre del usuario -->
+                <p class="titulo-usuario">Encargado</p> <!-- Título del usuario -->
+            </div>
+
+            <div class="title">
+                <i class="fa-solid fa-chevron-left" onclick="window.location.href='menu.html';"></i>
+                <h2><em>DETALLE BENEFICIARIO</em></h2>
+            </div>
+        
+
+            <!-- ======================= Cards ================== -->
+            
+            <div class="cardBox">
+                <div class="card-empleo">
+                    <div class="profile-container">
+                        <img class="profile-picture" src="img/pers. Óbito.svg" alt="Profile Picture">
+                    </div>
+                    <div class="title-button-container">
+                        <h2 class="title-card">Pers. de Óbito</h2>
+                        <div class="button-container">
+                            <button class="eye-button" onclick="window.location.href='detalle-empleo.html';"><i class="fas fa-eye"></i></button>
+                            <button class="edit-button" onclick="window.location.href='editar-empleo.html';">Editar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+            <!-- ================ Order Details List ================= -->
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="mini-titulo">Opciones de documentos</div>
+                    <div class="cardBox2">
+                        <div class="input">
+                            <label for="inputAdhesion" class="checkbox-label">
+                                <input type="checkbox" id="inputAdhesion" checked>
+                                <span class="checkmark"></span>
+                                Carta adhesion
+                            </label>
+                        </div>
+                        <div class="input">
+                            <label for="inputTestamentaria" class="checkbox-label">
+                                <input type="checkbox" id="inputTestamentaria" checked>
+                                <span class="checkmark"></span>
+                                Carta testamentaria
+                            </label>
+                        </div>
+                        <div class="input">
+                            <label for="inputCredencial" class="checkbox-label">
+                                <input type="checkbox" id="inputCredencial" checked>
+                                <span class="checkmark"></span>
+                                Copia de credencial de elector
+                            </label>
+                        </div>
+                        <div class="input">
+                            <label for="inputPago" class="checkbox-label">
+                                <input type="checkbox" id="inputPago" checked>
+                                <span class="checkmark"></span>
+                                Copia del ultimo talon de pago
+                            </label>
+                        </div>
+                        
+                    </div>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Nombre</td>
+                                <td>Porcentaje</td>
+                                <td>Parentesco</td>
+                                <td>Editar</td>
+                                <td>Eliminar</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Eugenia Martinez Gustamante</td>
+                                <td>60%</td>
+                                <td>Mamá</td>
+                                <td>
+                                    <div class="icon-container">
+                                        <a href="menu.html"> 
+                                            <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
+                                        </a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="icon-container">
+                                        <a href="menu.html"> 
+                                            <i class="fa-solid fa-trash-can"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>93940323</td>
+                                <td>XNIWE9NC9</td>
+                                <td>UIFNBV933RR933F</td>
+                                <td>
+                                    <div class="icon-container">
+                                        <a href="menu.html"> 
+                                            <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
+                                        </a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="icon-container">
+                                        <a href="menu.html"> 
+                                            <i class="fa-solid fa-trash-can"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>299842221</td>
+                                <td>NCENW29NE</td>
+                                <td>HXIXHHEH822C2XJ</td>
+                                <td>
+                                    <div class="icon-container">
+                                        <a href="menu.html"> 
+                                            <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
+                                        </a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="icon-container">
+                                        <a href="menu.html"> 
+                                            <i class="fa-solid fa-trash-can"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>983927212</td>
+                                <td>JDC92CM92C2</td>
+                                <td>CJIDJ93ICN39</td>
+                                <td>
+                                    <div class="icon-container">
+                                        <a href="menu.html"> 
+                                            <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
+                                        </a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="icon-container">
+                                        <a href="menu.html"> 
+                                            <i class="fa-solid fa-trash-can"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Star Refrigerator</td>
+                                <td>$1200</td>
+                                <td>Paid</td>
+                                <td>
+                                    <div class="icon-container">
+                                        <a href="menu.html"> 
+                                            <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
+                                        </a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="icon-container">
+                                        <a href="menu.html"> 
+                                            <i class="fa-solid fa-trash-can"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Dell Laptop</td>
+                                <td>$110</td>
+                                <td>Due</td>
+                                <td>
+                                    <div class="icon-container">
+                                        <a href="menu.html"> 
+                                            <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
+                                        </a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="icon-container">
+                                        <a href="menu.html"> 
+                                            <i class="fa-solid fa-trash-can"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Apple Watch</td>
+                                <td>$1200</td>
+                                <td>Paid</td>
+                                <td>
+                                    <div class="icon-container">
+                                        <a href="menu.html"> 
+                                            <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
+                                        </a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="icon-container">
+                                        <a href="menu.html"> 
+                                            <i class="fa-solid fa-trash-can"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Addidas Shoes</td>
+                                <td>$620</td>
+                                <td>Due</td>
+                                <td>
+                                    <div class="icon-container">
+                                        <a href="menu.html"> 
+                                            <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
+                                        </a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="icon-container">
+                                        <a href="menu.html"> 
+                                            <i class="fa-solid fa-trash-can"></i>
+                                        </a>
+                                    </div>
+                                </td> 
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    
+                    
+                    
+                </div>
+
+                <!-- ================= New Customers ================ -->
+            </div>
+        </div>
+    </div>
+
+    <!-- =========== Scripts =========  -->
+    <script src="JS/detalle-beneficiario.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

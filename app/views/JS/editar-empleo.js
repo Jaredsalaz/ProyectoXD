@@ -20,7 +20,7 @@
   }
 
   function redirigir() {
-    window.location.href = 'menu.html';
+    window.location.href = 'detalle-empleo.html';
   }
   
   
