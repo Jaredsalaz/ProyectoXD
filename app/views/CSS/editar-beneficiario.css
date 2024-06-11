@@ -999,6 +999,8 @@ body {
     color: #ed9d9d;
 }
 /*Estilo de la alerta */
+/*Estilo de la alerta */
+
 .alert {
   position: fixed;
   top: 55%;
@@ -1018,13 +1020,14 @@ body {
 
 .alert i {
   font-size: 2em;
-  color: #f00;
+  color: #008000; /* Cambia el color del ícono a verde */
 }
-.fas.fa-exclamation-triangle {
+
+.fas.fa-check-circle {
   border-radius: 20%;
   padding: 10px;
-  background-color: #ffb7b7;
-  color: #f00;
+  background-color: #00ee38; /* Cambia el color de fondo a un verde claro */
+  color: #008000; /* Cambia el color del ícono a verde */
 }
 
 .alert p {
@@ -1034,7 +1037,7 @@ body {
 .alert button {
   padding: 0.7em 1em;
   border-radius: 10px;
-  background-color: #F00;
+  background-color: #008000;
   width: 90%;
   color: #fff;
   font-size: medium;
@@ -1043,25 +1046,39 @@ body {
   display: flex;
   justify-content: space-between;
   width: 80%;
-  margin: auto;
+  margin-left: 50px;
 }
 
-.alert .button-container button:first-child {
-  margin-right: 20px;
-  background-color: transparent; /* Cambia el color de fondo a transparente */
-  border: 1px solid #808080; /* Agrega un borde gris */
-  color: #000;
-}
-
-.alert .button-container button:last-child {
-  background-color: #FFAA04; /* Cambia el color de fondo del segundo botón a verde */
-  border: none; /* Elimina el borde del segundo botón */
-}
 .alert .icon {
-  background-color: #fff1d7; /* Cambia el color de fondo a rojo */
+  background-color: #d5ecd8; /* Cambia el color de fondo a rojo */
   border-radius: 10px; /* Hace que el icono sea redondo */
   padding: 10px; /* Agrega espacio alrededor del icono */
-  color: #ffaa04;
+  color: #709c86;
+}
+.fa-solid.fa-circle-exclamation {
+  color: #ff0303; /* Cambia el color del icono */
+  background-color: #ffb7b7; /* Cambia el color de fondo */
+  padding: 10px; /* Agrega un poco de espacio alrededor del icono */
+  border-radius: 15%; /* Hace que el fondo sea circular */
+  font-size: 2.7em;
+}
+.button-container-modal {
+  text-align: center; /* Centra el botón dentro del contenedor */
+  margin-right: 50px;
+  padding: 0;
+  margin-top: -40px;
+  margin-bottom: -20px;
+  
+}
+
+.button-container-modal button {
+  background-color: #ff0000; /* Color de fondo del botón */
+  color: #ffffff; /* Color del texto del botón */
+  border: none; /* Elimina el borde del botón */
+  padding: 10px 20px; /* Añade relleno alrededor del texto dentro del botón */
+  border-radius: 5px; /* Bordes redondeados del botón */
+  cursor: pointer; /* Cambia el cursor a un puntero cuando se pasa sobre el botón */
+  font-size: 16px; /* Tamaño del texto del botón */
 }
 
 /* Estilos para pantallas de tabletas y móviles */
@@ -1076,9 +1093,7 @@ body {
     align-items: stretch; /* Asegura que los botones se estiren para llenar el contenedor */
   }
 
-  .alert .button-container button {
-    margin-bottom: 10px; /* Añade margen debajo de los botones */
-  }
+  
 }
 /* ====================== Responsive Design ========================== */
 @media (max-width: 991px) {

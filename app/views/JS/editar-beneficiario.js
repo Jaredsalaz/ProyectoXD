@@ -1,5 +1,42 @@
-    
-    
+
+    document.getElementById('botonGuardar').addEventListener('click', function() {
+      document.getElementById('nuevoModal').style.display = 'block';
+    });
+
+    // Añade el manejador de eventos al botón "Aceptar"
+    document.getElementById('aceptarBtn').addEventListener('click', function() {
+      // Cierra el modal actual
+      document.getElementById('nuevoModal').style.display = 'none';
+      // Llama a showAlert para abrir el nuevo modal
+      showAlert();
+    });
+
+    //Modal alert
+    function showAlert() {
+      var alertDiv = document.createElement('div');
+      alertDiv.className = 'alert';
+      alertDiv.innerHTML = `
+        <i class="fas fa-check-circle icon"></i>
+        <p>Los cambios se han guardado con éxito</p>
+        <div class="button-container">
+          <button onclick="redirigir()">Aceptar</button> <!-- Cambiado para llamar a redirigir() -->
+        </div>
+      `;
+      document.body.appendChild(alertDiv);
+    }
+
+    function closeSecondAlert() {
+      var alertDiv = document.querySelector('.alert');
+      if (alertDiv) {
+        document.body.removeChild(alertDiv);
+      }
+    }
+
+    function redirigir() {
+      window.location.href = 'detalle-beneficiario.html'; // Asegúrate de que esta URL es correcta
+    }
+   
+
     function eliminarFila(elemento) {
       // Encuentra el elemento <tr> más cercano, que es la fila de la tabla que queremos eliminar
       var filaParaEliminar = elemento.closest('tr');
@@ -44,42 +81,6 @@
     
 
 
-    //Modal alert
-    function showAlert() {
-        var alertDiv = document.createElement('div');
-        alertDiv.className = 'alert';
-        alertDiv.innerHTML = `
-          <i class="fas fa-exclamation-triangle"></i>
-          <p>La busqueda no arrojo ningun resultado, <br>Por favor revise su criterio de busqueda</p>
-          <button onclick="closeAlert()">Aceptar</button>
-        `;
-        document.body.appendChild(alertDiv);
-      }
-      
-      function closeAlert() {
-        var alertDiv = document.querySelector('.alert');
-        document.body.removeChild(alertDiv);
-        showSecondAlert();
-      }
-      
-      function showSecondAlert() {
-        var alertDiv = document.createElement('div');
-        alertDiv.className = 'alert';
-        alertDiv.innerHTML = `
-          <i class="fas fa-question-circle icon"></i> <!-- Agrega la clase 'icon' -->
-          <p>No se encontro el RFC solicitado, <br>¿Desea adherirlo al fondo?</p>
-          <div class="button-container">
-            <button onclick="closeSecondAlert()">Cancelar</button>
-            <button onclick="closeSecondAlert()">Aceptar</button>
-          </div>
-        `;
-        document.body.appendChild(alertDiv);
-      }
-      
-      function closeSecondAlert() {
-        var alertDiv = document.querySelector('.alert');
-        document.body.removeChild(alertDiv);
-      }
       
       
       // Campana de notificación y menu de notificaciones

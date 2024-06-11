@@ -162,7 +162,7 @@
                     </div>
                     <div class="boton-buscar2">
                         <button type="button" id="cerrar-modal2" class="boton-atras">Cancelar</button>
-                        <button type="button"   >Guardar</button>
+                        <button type="button">Guardar</button>
                     </div>
                 </div>
             </div>
@@ -416,7 +416,17 @@
                     
                     <div class="boton-buscar2">
                         <button type="button" class="boton-atras" onclick="window.location.href='menu.html';">Cancelar</button>
-                        <button type="button" ">Guardar</button>
+                        <!-- Botón para activar el nuevo modal -->
+                        <button type="button" id="botonGuardar">Guardar</button>
+                        
+                        <!-- Nuevo modal con contenido diferente -->
+                        <div class="alert" id="nuevoModal" style="display: none;">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <p>La suma de los porcentanjes de cada beneficiario debe dar el 100%</p>
+                            <div class="button-container-modal">
+                                <button id="aceptarBtn" type="button">Aceptar</button>
+                            </div>
+                        </div>
                     </div>
                     
                     
