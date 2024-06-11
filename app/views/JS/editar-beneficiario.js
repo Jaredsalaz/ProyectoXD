@@ -33,55 +33,84 @@
     }
 
     function redirigir() {
-      window.location.href = 'detalle-beneficiario.html'; // Asegúrate de que esta URL es correcta
+      window.location.href = 'detalle-beneficiario.html'; 
     }
    
 
-    function eliminarFila(elemento) {
-      // Encuentra el elemento <tr> más cercano, que es la fila de la tabla que queremos eliminar
-      var filaParaEliminar = elemento.closest('tr');
-      // Elimina la fila encontrada
-      filaParaEliminar.remove();
-    }
+  function eliminarFila(elemento) {
+    // Muestra el modal de confirmación
+    var confirmModal = document.getElementById('confirmModal');
+    confirmModal.style.display = 'block';
+
+    // Encuentra el elemento <tr> más cercano, que es la fila de la tabla que queremos eliminar
+    var filaParaEliminar = elemento.closest('tr');
+
+    // Maneja el clic en el botón "Cancelar"
+    document.getElementById('cancelButton').onclick = function() {
+      confirmModal.style.display = 'none'; // Cierra el modal
+  };
+
+  // Maneja el clic en el botón "Aceptar"
+  document.getElementById('acceptButton').onclick = function() {
+    // Elimina la fila encontrada
+    filaParaEliminar.remove();
+    confirmModal.style.display = 'none'; // Cierra el modal
+  };
+}
     
     
-    // Obtener el modal
-    var modal = document.getElementById("myModal");
+document.addEventListener('DOMContentLoaded', function() {
+    // Encuentra el botón que abre el modal para un nuevo beneficiario
+    var openModalBtn = document.getElementById('openModalBtn');
 
-    // Obtener el botón que abre el modal
-    var btn = document.getElementById("openModalBtn");
+    // Encuentra todos los contenedores de iconos de lápiz por su clase
+    var editIconContainers = document.querySelectorAll('.editar-modal-b');
 
-    // Obtener el elemento <span> que cierra el modal
-    var span = document.getElementsByClassName("close")[0];
+    // Encuentra el modal por su ID
+    var myModal = document.getElementById('myModal');
 
-    // Obtener el botón que cierra el modal
-    var cerrarBtn = document.getElementById("cerrar-modal2");
+    // Encuentra el elemento del título dentro del modal
+    var modalTitle = myModal.querySelector('.title h2 em');
 
-    // Cuando el usuario hace clic en el botón, abrir el modal 
-    btn.onclick = function() {
-        modal.style.display = "block";
+    // Función para abrir el modal y establecer el título para "Nuevo Beneficiario"
+    function openNewBeneficiaryModal() {
+        modalTitle.innerHTML = 'NUEVO BENEFICIARIO';
+        myModal.style.display = 'block';
     }
 
-    // Cuando el usuario hace clic en <span> (x), cerrar el modal
-    span.onclick = function() {
-        modal.style.display = "none";
+    // Función para abrir el modal y establecer el título para "Editar Beneficiario"
+    function openEditBeneficiaryModal() {
+        modalTitle.innerHTML = 'EDITAR BENEFICIARIO';
+        myModal.style.display = 'block';
     }
 
-    // Cuando el usuario hace clic en el botón de cerrar, cerrar el modal
-    cerrarBtn.onclick = function() {
-        modal.style.display = "none";
+    // Evento para abrir el modal con el título "Nuevo Beneficiario"
+    openModalBtn.addEventListener('click', openNewBeneficiaryModal);
+
+    // Asigna el evento de clic a cada icono de lápiz para abrir el modal de edición
+    editIconContainers.forEach(function(iconContainer) {
+        iconContainer.addEventListener('click', openEditBeneficiaryModal);
+    });
+
+    // Encuentra el botón que cierra el modal
+    var closeModalBtn = document.getElementById('cerrar-modal2');
+
+    // Función para cerrar el modal
+    function closeModal() {
+        myModal.style.display = 'none';
     }
 
-    // Cuando el usuario hace clic fuera del modal, cerrarlo
+    // Evento para cerrar el modal
+    closeModalBtn.addEventListener('click', closeModal);
+
+    // Cierra el modal si el usuario hace clic fuera de él
     window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
+        if (event.target == myModal) {
+            closeModal();
         }
     }
+});
     
-
-
-      
       
       // Campana de notificación y menu de notificaciones
       window.addEventListener('DOMContentLoaded', (event) => {
