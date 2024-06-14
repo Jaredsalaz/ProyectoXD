@@ -66,6 +66,8 @@ toggle.onclick = function () {
   main.classList.toggle("active");
 };
   
+
+
   // Selecciona todos los campos de entrada
 var inputs = document.querySelectorAll('.input input');
 
