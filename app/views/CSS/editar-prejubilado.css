@@ -666,51 +666,13 @@ body {
     background-color: #FF3300;
   }
   
-  /* Pantallas medianas (tablets, dispositivos con ancho de 768px a 991px) */
-  @media (max-width: 991px) {
-      .boton-buscar button {
-          margin-left: 65%; /* Disminuye el margin-left */
-      }
-  }
-  
-  /* Pantallas pequeñas (teléfonos en modo paisaje y tablets pequeñas, dispositivos con ancho de 576px a 767px) */
-  @media (max-width: 767px) {
-      .boton-buscar button {
-          margin-left: 60%; /* Disminuye aún más el margin-left */
-      }
-  }
-  
-  /* Pantallas extra pequeñas (teléfonos en modo retrato, dispositivos con ancho menor a 576px) */
-  @media (max-width: 575px) {
-      .boton-buscar button {
-          margin-left: 55%; /* Disminuye considerablemente el margin-left */
-      }
-  }
+
   
   .boton-buscar button:hover {
       background-color: #FF3300;
   }
 
-/* Pantallas medianas (tablets, dispositivos con ancho de 768px a 991px) */
-@media (max-width: 991px) {
-    .boton-buscar button {
-        margin-left: 65%; /* Disminuye el margin-left */
-    }
-}
 
-/* Pantallas pequeñas (teléfonos en modo paisaje y tablets pequeñas, dispositivos con ancho de 576px a 767px) */
-@media (max-width: 767px) {
-    .boton-buscar button {
-        margin-left: 60%; /* Disminuye aún más el margin-left */
-    }
-}
-
-/* Pantallas extra pequeñas (teléfonos en modo retrato, dispositivos con ancho menor a 576px) */
-@media (max-width: 575px) {
-    .boton-buscar button {
-        margin-left: 55%; /* Disminuye considerablemente el margin-left */
-    }
-}
 
 .boton-buscar button:hover {
     background-color: #FF3300;
