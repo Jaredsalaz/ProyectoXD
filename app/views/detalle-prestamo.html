@@ -8,7 +8,7 @@
     <title>Responsive Admin Dashboard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!-- ======= Styles ====== -->
-    <link rel="stylesheet" href="CSS/nuevo-prestamo2.css">
+    <link rel="stylesheet" href="CSS/detalle-prestamo.css">
 </head>
 
 <body>
@@ -119,12 +119,6 @@
 
         <!-- ========================= Main ==================== -->
         <div class="main">
-            <div id="confirmModal" style="display:none;">
-                <i class="fa-regular fa-circle-check"></i>
-                <p>El registro se guardo con éxito</p>
-                <button id="cancelButton">Cancelar</button>
-                <button id="acceptButton">Aceptar</button>
-            </div>
             <div class="topbar">
                 <div class="toggle">
                     <ion-icon name="menu-outline"></ion-icon>
@@ -154,20 +148,20 @@
 
             <div class="title">
                 <i class="fa-solid fa-chevron-left" onclick="window.location.href='visualizar-prestamo.html';"></i>
-                <h2><em>NUEVO PRESTAMO</em></h2>
+                <h2><em>DETALLE PRÉSTAMO</em></h2>
             </div>
 
             <div class="segundo-encabezado">
-                <div class="domicilio">
-                    <i class="fa-solid fa-1"></i>
+                <div class="Icono-lapiz">
+                    <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
                     <h3>Datos</h3>
                 </div>
                 <div class="linea-horizontal">
                     <div class="linea-carga"></div> <!-- Línea de carga -->
                 </div>
-                <div class="Icono-lapiz">
-                    <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
-                    <h3>Observaciónes</h3>
+                <div class="domicilio">
+                    <i class="fa-solid fa-2"></i>
+                    <h3>Observaciones</h3>
                 </div>
             </div>
         
@@ -179,81 +173,107 @@
             <div class="details">
                 <div class="recentOrders">
                     <div class="cardBox2">
-                        <div class="input">
-                            <div class="Tnombre">Qna.Envio.</div>
-                            <input type="text" placeholder="Escriba el Qna.Envio." id="inputRFC">
+                        <div class="input-gris">
+                            <div class="Tnombre">Revisión</div>
+                            <input type="text" value="Aceptado" id="inputEstatus" readonly>
                         </div>
-                        <div class="input">
-                            <div class="Tnombre">Región</div>
-                            <input type="text" placeholder="Escriba la región" id="inputNombre">
+                        <div class="input-gris">
+                            <div class="Tnombre">Estatus</div>
+                            <input type="text" value="Pendiente" id="inputEstatus" readonly>
                         </div>
-                        <div class="input">
-                            <div class="Tnombre">Enviar</div>
-                            <div style="display: flex; padding-top: 5px;">
-                                <div style="padding-right: 50px;">
-                                    <label class="checkbox-label">
-                                        <input type="checkbox" id="si" name="sexo" value="si">
-                                        <span class="checkmark"></span> <!-- Elemento checkmark agregado -->
-                                        <label for="si" style="margin-left: 10px;">Si</label>
-                                    </label>
-                                </div>
-                            </div>  
+                        <div class="input-gris">
+                            <div class="Tnombre">Folio</div>
+                            <input type="text" value="2126" id="inputFecha" readonly>
                         </div>
+                        
                         <div class="input">
-                            <div class="Tnombre">Enviar como</div>
-                            <div class="select-container">
-                                <select id="input2">
-                                    <option value="" disabled>Seleccione tipo</option>
-                                    <option value="soltero" selected>PDF</option>
-                                    <option value="casado">DOC</option>
-                                    <option value="casado">CV</option>
-                                    <!-- Agregar más opciones -->
-                                </select>
-                                <i class="fa-solid fa-angle-down"></i>
-                            </div>
+                            <div class="Tnombre">Plazo</div>
+                            <input type="text" placeholder="Escriba el plazo" id="inputCURP">
                         </div>
+                        
                     </div>
-                    <div class="cardBox">
-                        <div class="input2">
-                            <div class="Tnombre">Observaciones</div>
-                            <textarea id="input1" placeholder="" rows="8" cols="50"></textarea>
-                        </div>
-                    </div>
-                    <div class="mini-titulo">Documentos</div>
                     <div class="cardBox2">
                         <div class="input">
-                            <label for="inputAdhesion" class="checkbox-label">
-                                <input type="checkbox" id="inputAdhesion" checked>
-                                <span class="checkmark"></span>
-                                Carta adhesión
-                            </label>
+                            <div class="Tnombre">Capital</div>
+                            <input type="text" placeholder="Escriba la capital" id="input1">
+                            
                         </div>
                         <div class="input">
-                            <label for="inputTestamentaria" class="checkbox-label">
-                                <input type="checkbox" id="inputTestamentaria" checked>
-                                <span class="checkmark"></span>
-                                Copia de comprobante de domicilio
-                            </label>
+                            <div class="Tnombre">Intereses</div>
+                            <input type="text" placeholder="Escriba los Intereses" id="input1">
+                            
+                        </div>
+                       
+                        <div class="input">
+                            <div class="Tnombre">F.G.</div>
+                            <input type="text" placeholder="Escriba el F.G." id="input1">
+                            
                         </div>
                         <div class="input">
-                            <label for="inputCredencial" class="checkbox-label">
-                                <input type="checkbox" id="inputCredencial" checked>
-                                <span class="checkmark"></span>
-                                Copia de talón de cheques
-                            </label>
+                            <div class="Tnombre">Total</div>
+                            <input type="text2" placeholder="Escriba el total" id="input2">
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="cardBox2">
+                        <div class="input">
+                            <div class="Tnombre">Desc.Qna.</div>
+                            <input type="text" placeholder="Escriba el Desc.Qna." id="inputRFC">
                         </div>
                         <div class="input">
-                            <label for="inputPago" class="checkbox-label">
-                                <input type="checkbox" id="inputPago" checked>
-                                <span class="checkmark"></span>
-                                Copia de identificación oficial
-                            </label>
+                            <div class="Tnombre">Fecha sol.</div>
+                            <input type="text" placeholder="Escriba la fecha sol" id="inputNombre">
+                        </div>
+                        <div class="input">
+                            <div class="Tnombre">Etapa</div>
+                            <input type="text" placeholder="Escriba la etapa" id="inputCURP">
+                        </div>
+                        <div class="input">
+                            <div class="Tnombre">Qna.Inicial.</div>
+                            <input type="text" placeholder="Escriba la Qna.Inicial." id="inputCURP">
+                        </div>
+                        
+                    </div>
+                    <div class="cardBox2">
+                        <div class="input">
+                            <div class="Tnombre">Qna.Final.</div>
+                            <input type="text" placeholder="Escriba la Qna.Final." id="inputRFC">
+                        </div>
+                        <div class="input">
+                            <div class="Tnombre">Descuento</div>
+                            <input type="text" placeholder="Escriba el descuento" id="inputNombre">
+                        </div>
+                        <div class="input">
+                            <div class="Tnombre">Tipo prestamo</div>
+                            <input type="text" placeholder="Escriba el tipo de prestamo" id="inputCURP">
+                        </div>
+                        <div class="input">
+                            <div class="Tnombre">Año</div>
+                            <input type="text" placeholder="Escriba el año" id="inputCURP">
                         </div>
                     </div>
+                    <div class="cardBox2">
+                        <div class="input">
+                            <div class="Tnombre">Percepciones</div>
+                            <input type="text" placeholder="Escriba la Percepción" id="inputRFC">
+                        </div>
+                        <div class="input">
+                            <div class="Tnombre">Deducciones</div>
+                            <input type="text" placeholder="Escriba la deduccion" id="inputNombre">
+                        </div>
+                        <div class="input">
+                            <div class="Tnombre">Liquido</div>
+                            <input type="text" placeholder="Escriba el Liquido" id="inputCURP">
+                        </div>
+                        <div class="input">
+                            <div class="Tnombre">Liquido constancia</div>
+                            <input type="text" placeholder="Escriba la constancia" id="inputCURP">
+                        </div>
+                        
+                    </div>
                     <div class="boton-buscar">
-                        <button type="button" class="boton-atras" onclick="window.history.back();">Cancelar</button>
-                        <button type="button" onclick="document.getElementById('confirmModal').style.display='block';">Guardar</button>
-
+                        <button type="button" onclick="window.location.href='detalle-prestamo2.html';">Siguiente</button>
                     </div>
                     
                 </div>
@@ -264,7 +284,7 @@
     </div>
 
     <!-- =========== Scripts =========  -->
-    <script src="JS/nuevo-prestamo2.js"></script>
+    <script src="JS/detalle-prestamo.js"></script>
 
     <!-- ====== ionicons ======= -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

@@ -1,17 +1,72 @@
 
   
-document.addEventListener('DOMContentLoaded', function() {
-    // Evento para cerrar el modal
-    document.getElementById('cancelButton').addEventListener('click', function() {
-        document.getElementById('confirmModal').style.display = 'none';
-    });
+  
+  //Mayusculas en el input del RFC y CURP 
+  // Transforma el texto ingresado a mayúsculas
+  // Selecciona los campos de entrada de RFC y CURP
+  var inputRFC = document.getElementById('inputRFC');
+  var inputCURP = document.getElementById('inputCURP');
 
-    // Evento para redirigir al usuario al hacer clic en "Aceptar"
-    document.getElementById('acceptButton').addEventListener('click', function() {
-        window.location.href = 'visualizar-prestamo.html';
-    });
-});  
+  // Escucha el evento 'input' en los campos de entrada
+  inputRFC.addEventListener('input', convertirAMayusculas);
+  inputCURP.addEventListener('input', convertirAMayusculas);
 
+  function convertirAMayusculas() {
+      // Convierte el valor del campo de entrada a mayúsculas
+      this.value = this.value.toUpperCase();
+  }
+  
+  //Input icono de X 
+  // funcion para limpiar el input 
+  function clearInput(inputId) {
+    var input = document.getElementById(inputId);
+    input.value = '';
+    input.nextElementSibling.style.display = 'none'; // Oculta el icono después de borrar el texto
+  }
+  
+  // Muestra u oculta el icono según si hay texto en el input
+  function toggleIcon(inputId) {
+    var input = document.getElementById(inputId);
+    var icon = input.nextElementSibling;
+    icon.style.display = input.value ? 'inline' : 'none';
+  }
+  
+  // Añade event listeners a los inputs para mostrar u ocultar el icono
+  document.getElementById('input1').addEventListener('input', function() { toggleIcon('input1'); });
+  document.getElementById('input2').addEventListener('input', function() { toggleIcon('input2'); });
+  
+  
+  //Modal alert
+  function showAlert() {
+    var alertDiv = document.createElement('div');
+    alertDiv.className = 'alert';
+    alertDiv.innerHTML = `
+      <i class="fas fa-exclamation-triangle"></i>
+      <p>La busqueda no arrojo ningun resultado, <br>Por favor revise su criterio de busqueda</p>
+      <button onclick="closeAlert()">Aceptar</button>
+    `;
+    document.body.appendChild(alertDiv);
+  }
+  
+  function closeAlert() {
+    var alertDiv = document.querySelector('.alert');
+    document.body.removeChild(alertDiv);
+    showSecondAlert();
+  }
+  
+  function showSecondAlert() {
+    var alertDiv = document.createElement('div');
+    alertDiv.className = 'alert';
+    alertDiv.innerHTML = `
+      <i class="fas fa-question-circle icon"></i> <!-- Agrega la clase 'icon' -->
+      <p>No se encontro el RFC solicitado, <br>¿Desea adherirlo al fondo?</p>
+      <div class="button-container">
+        <button onclick="closeSecondAlert()">Cancelar</button>
+        <button onclick="closeSecondAlert()">Aceptar</button>
+      </div>
+    `;
+    document.body.appendChild(alertDiv);
+  }
   
   function closeSecondAlert() {
     var alertDiv = document.querySelector('.alert');
@@ -72,8 +127,8 @@ document.addEventListener('DOMContentLoaded', function() {
     main.classList.toggle("active");
   };
   
-// Selecciona todos los campos de entrada, incluyendo el textarea de observaciones
-var inputs = document.querySelectorAll('.input input, .input select, .input2 textarea');
+  // Selecciona todos los campos de entrada
+var inputs = document.querySelectorAll('.input input, .input select');
 
 // Selecciona la barra de carga
 var lineaCarga = document.querySelector('.linea-carga');
@@ -98,3 +153,4 @@ function actualizarLineaCarga() {
 
     lineaCarga.style.width = porcentajeCompletado + '%';
 }
+

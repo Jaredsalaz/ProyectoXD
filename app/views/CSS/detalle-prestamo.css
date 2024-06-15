@@ -401,7 +401,7 @@ body {
   padding-top: 15px;
   color: #ffffff;
 }
-.domicilio .fa-solid.fa-1 {
+.domicilio .fa-solid.fa-2 {
   padding: 10px;
   background-color: #000000;
   color: #ffffff;
@@ -415,30 +415,9 @@ body {
   width: 100%;
   padding: 20px;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px;
   
-}
-/* Estilos ajustados para el textarea */
-.input2 {
-    position: relative;
-    padding-top: 0px;
-}
-.input2 textarea {
-    width: 100%;
-    padding: 13px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    outline: none;
-    transition: all 0.3s ease;
-    background-color: #282826;
-    color: #fff;
-    resize: vertical; /* Permite al usuario ajustar la altura del textarea */
-}
-
-.input2 textarea:focus {
-    border-color: #FF6600;
-    box-shadow: 0 0 10px #FF6600;
 }
 .cardBox2 {
     position: relative;
@@ -467,50 +446,18 @@ body {
     align-items: center;
 }
 
-.checkbox-label {
-    display: flex;
-    align-items: center;
-    font-size: 16px; 
-    color: #000; /* Color del texto */
-}
-
-.checkbox-label input[type="checkbox"] {
-    display: none; /* Oculta el checkbox predeterminado */
-}
-
-.checkbox-label .checkmark {
-    display: inline-block;
-    width: 20px; /* Tamaño del checkmark */
-    height: 20px; /* Tamaño del checkmark */
-    background: #282626;
-    margin-right: 10px; /* Espacio entre el checkmark y el texto */
-    position: relative;
+.input input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    border: 2px solid #282826;
     cursor: pointer;
-}
-
-.checkbox-label input[type="checkbox"]:checked + .checkmark::after {
-    content: "\2713"; /* Carácter de palomita */
-    color: white; /* Color de la palomita */
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 16px; /* Tamaño de la palomita */
 }
 
 .input input[type="checkbox"]:checked {
     background: #282826;
-}
-.mini-titulo{
-    position: relative;
-    width: 100%;
-    padding-left: 20px;
-    padding-top: 5px;
-    padding-bottom: -20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 40px;
-    
 }
 /*Inputs */
 .Tnombre {
@@ -611,28 +558,16 @@ body {
     border-color: #FF6600;
     box-shadow: 0 0 10px #FF6600;
 }
-.boton-buscar .boton-atras {
-    background-color: #fff;
-    color: #000000;
-    border: 2px solid #808080; /* Gris oscuro */
-    transition: all 0.3s ease; /* Transición suave para el hover */
-  }
-  
-  .boton-buscar .boton-atras:hover {
-    background-color: #f2f2f2; 
-    
-  }
 .boton-buscar {
   width: 100%;
   height: 20%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: flex-start;
-  
+  padding: 20PX;
 }
 .boton-buscar button {
   width: 25%; 
-  margin: 40px; 
   padding: 9px;
   border-radius: 10px;
   border: none;
@@ -646,15 +581,6 @@ body {
 
 .boton-buscar button:hover {
   background-color: #FF3300; /* Cambia el color de fondo cuando se pasa por encima del botón */
-}
-
-.select-container i {
-    position: absolute;
-    right: 10px;
-    top: 70%;
-    transform: translateY(-50%);
-    color: rgb(255, 255, 255);
-    pointer-events: none;
 }
 .cardBox .card {
   position: relative;
@@ -709,56 +635,6 @@ body {
   border: 1px solid #fec453;
   border-radius: 50px;
   font-size: 1.4em;
-}
-/*Estilo de la alerta */
-#confirmModal {
-  position: fixed;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 1em;
-  border: 1px solid #000;
-  background-color: #fff;
-  text-align: center;
-  z-index: 1000;
-  border-radius: 10px;
-  width: 80%;
-  height: auto;
-  max-width: 380px;
-}
-
-#confirmModal i {
-  font-size: 3em;
-  color: #709c85; /* Cambia el color del ícono a verde */
-  background-color: #d6edd9; /* Fondo de color */
-  border-radius: 15%; /* Borde redondeado */
-  padding: 9px;
-}
-
-#confirmModal p {
-  margin: 1em 1em;
-  margin-bottom: 20px;
-}
-#cancelButton {
-  background-color: #ffffff; /* Fondo del botón */
-  border: 1px solid #cacaca; /* Borde del botón */
-  color: black; /* Color del texto */
-  border-radius: 10px; /* Borde redondeado */
-  padding: 0.7em 1em;
-  width: 40%;
-  margin-right: 10px;
-  font-size: medium;
-  cursor: pointer;
-}
-#acceptButton {
-  background-color: #709c85; /* Fondo del botón */
-border: 1px solid #709c85; /* Borde del botón */
-  color: white; /* Color del texto */
-  border-radius: 10px; /* Borde redondeado */
-  padding: 0.9em 1em;
-  width: 40%;
-  margin-bottom: 10px;
-  cursor: pointer;
 }
 /*Estilo de la alerta */
 .alert {
