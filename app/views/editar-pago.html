@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="CSS/editar-pago.css">
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <img class="large-logo" src="img/Logo fabes blanco.png" alt="Large Logo">
+                            <img class="small-logo" src="img/Icono fabes blanco.png" alt="Small Logo">
+                        </span>
+                    </a>
+                    
+                </li>
+
+                <li class="hovered">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Inicio</span>
+                        <i class="fas fa-chevron-down inicio-icon"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">Usuario</span>
+                        <i class="fas fa-chevron-down usuario-icon"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="card-outline"></ion-icon>
+                        </span>
+                        <span class="title">Adm Créditos</span>
+                        <i class="fas fa-chevron-down adm-icon"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="pie-chart-outline"></ion-icon>
+                        </span>
+                        <span class="title">Reportes</span>
+                        <i class="fas fa-chevron-down reportes-icon"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="logo-usd"></ion-icon>
+                        </span>
+                        <span class="title">Prestamos</span>
+                        <i class="fas fa-chevron-down prestamos-icon"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="folder-outline"></ion-icon>
+                        </span>
+                        <span class="title">Administración</span>
+                        <i class="fas fa-chevron-down administracion-icon"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                        </span>
+                        <span class="title">Mobile</span>
+                        <i class="fas fa-chevron-down mobile-icon"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">Configuración</span>
+                        <i class="fas fa-chevron-down confi-icon"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Cerrar Sesión</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div id="confirmModal" style="display:none;">
+                <i class="fa-regular fa-circle-check"></i>
+                <p>El registro se guardo con éxito</p>
+                <button id="cancelButton">Cancelar</button>
+                <button id="acceptButton">Aceptar</button>
+            </div>
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <div class="nombre">
+                    <h2>Hola, Jhovanny</h2>
+                </div>
+
+
+                <div class="campana">
+                    <i class="fas fa-bell"></i> <!-- Icono de campana -->
+                    <div class="notification-dot"></div> <!-- Punto de notificación -->
+                    <div id="notification-modal" class="modal"> <!-- Modal de notificación -->
+                        <i class="fas fa-times close"></i> <!-- Botón de cierre con icono -->
+                        <p>Tienes una nueva notificación</p> <!-- Notificación de prueba -->
+                        <p>Un cliente</p>
+                    </div>
+                </div>
+
+                <div class="user">
+                    <img src="img/customer01.jpg" alt="">
+                </div>
+                <p class="nombre-usuario">Jhovanni Torres</p> <!-- Nombre del usuario -->
+                <p class="titulo-usuario">Encargado</p> <!-- Título del usuario -->
+            </div>
+
+            <div class="title">
+                <i class="fa-solid fa-chevron-left" onclick="window.location.href='pagos.html';"></i>
+                <h2><em>EDITAR PAGO</em></h2>
+            </div>
+
+        
+
+            <!-- ======================= Cards ================== -->
+            
+
+            <!-- ================ Order Details List ================= -->
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardBox">
+                        <div class="input">
+                            <div class="Tnombre">Tipo de pago</div>
+                            <div class="select-container">
+                                <select id="input2">
+                                    <option value="" disabled>Seleccione tipo</option>
+                                    <option value="soltero" selected>Debito</option>
+                                    <option value="casado">Paypal</option>
+                                    <option value="casado">CV</option>
+                                    <!-- Agregar más opciones -->
+                                </select>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardBox2">
+                        <div class="input">
+                            <div class="Tnombre">Qna.Apli</div>
+                            <input type="text" placeholder="Escriba la Qna.Apli" id="inputNombre">
+                        </div>
+                        <div class="input">
+                            <div class="Tnombre">Qna.Inicial</div>
+                            <input type="text" placeholder="Escriba la Qna.Inicial" id="inputNombre">
+                        </div>
+                        <div class="input">
+                            <div class="Tnombre">Qna.Final</div>
+                            <input type="text" placeholder="Escriba la Qna.Final" id="inputNombre">
+                        </div>
+                        <div class="input">
+                            <div class="Tnombre">Qna.Proceso</div>
+                            <input type="text" placeholder="Escriba la Qna.Proceso" id="inputNombre">
+                        </div>
+                        <div class="input">
+                            <div class="Tnombre">Fecha.Rec.</div>
+                            <input type="text" placeholder="Escriba la Fecha.Rec." id="inputNombre">
+                        </div>
+                        <div class="input">
+                            <div class="Tnombre">Monto</div>
+                            <input type="text" placeholder="Escriba el monto" id="inputNombre">
+                        </div>
+                        <div class="input">
+                            <div class="Tnombre">Capital</div>
+                            <input type="text" placeholder="Escriba la capital" id="inputNombre">
+                        </div>
+                        <div class="input">
+                            <div class="Tnombre">Intereses</div>
+                            <input type="text" placeholder="Escriba los intereses" id="inputNombre">
+                        </div>
+                    </div>
+                    
+                    <div class="cardBox3">
+                        <div class="input">
+                            <div class="Tnombre">FG</div>
+                            <input type="text" placeholder="Escriba el FG" id="inputNombre">
+                        </div>
+                        <div class="input2">
+                            <div class="Tnombre">Observaciones</div>
+                            <textarea id="input1" placeholder="" rows="3" cols="50"></textarea>
+                        </div>
+                        
+                    </div>
+                    <div class="boton-buscar">
+                        <button type="button" class="boton-atras" onclick="window.history.back();">Cancelar</button>
+                        <button type="button" onclick="showAlert()">Guardar</button>
+                    </div>
+                    
+                </div>
+
+                <!-- ================= New Customers ================ -->
+            </div>
+        </div>
+    </div>
+
+    <!-- =========== Scripts =========  -->
+    <script src="JS/editar-pago.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

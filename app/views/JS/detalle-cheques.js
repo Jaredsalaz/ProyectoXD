@@ -1,28 +1,4 @@
 
-     
-      //Modal alert
-    function showAlert() {
-        var alertDiv = document.createElement('div');
-        alertDiv.className = 'alert';
-        alertDiv.innerHTML = `
-        <i class="fas fa-check-circle icon"></i>
-        <p>Los cambios se han guardado con éxito</p>
-        <div class="button-container">
-            <button onclick="redirigir()">Aceptar</button>
-        </div>
-        `;
-        document.body.appendChild(alertDiv);
-    }
-
-    function closeSecondAlert() {
-        var alertDiv = document.querySelector('.alert');
-        document.body.removeChild(alertDiv);
-    }
-
-    function redirigir() {
-        window.location.href = 'detalle-prejubilado.html';
-    }
-
     // Campana de notificación y menu de notificaciones
     window.addEventListener('DOMContentLoaded', (event) => {
         var modal = document.querySelector('#notification-modal');
