@@ -124,6 +124,18 @@ body {
 }
 .options label {
   font-size: 15px; 
+  margin-left: 21%;
+  position: relative;
+}
+
+.options label::before {
+  content: "\f0ca"; /* Código Unicode del icono de lista en Font Awesome */
+  font-family: "Font Awesome 5 Free"; /* Nombre de la fuente */
+  font-weight: 900; /* Peso de la fuente */
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .options label {
