@@ -1,3 +1,14 @@
+//dropdown
+document.addEventListener('DOMContentLoaded', function() {
+  const dropdownToggle = document.querySelector('.dropdown-toggle');
+  const usuarioIcon = document.querySelector('.usuario-icon');
+
+  dropdownToggle.addEventListener('click', function(event) {
+    event.preventDefault();
+    usuarioIcon.classList.toggle('show-dropdown');
+  });
+});
+
 //Mayusculas en el input del RFC
 // Transforma el texto ingresado a mayúsculas
 function toUpperCase(inputId) {
