@@ -33,31 +33,37 @@ body {
   margin-left: 100px; /* Mueve el icono un poco a la derecha */
   margin-top: 22px; /* Mueve el icono un poco hacia abajo */
 }
-.chevron-icon {
+/* iconos de lista o flechitas*/
+.chevron-icon-usuarios {
   margin-left: 70px; 
   margin-top: 18px;
   font-size: 1.4rem; 
   
 }
-.adm-icon {
-  margin-left: 38px; /* Mueve el icono un poco a la derecha */
-  margin-top: 22px; /* Mueve el icono un poco hacia abajo */
+.chevron-icon-creditos {
+  margin-left: 32px; 
+  margin-top: 18px;
+  font-size: 1.4rem; 
 }
-.reportes-icon {
-  margin-left: 70px; /* Mueve el icono un poco a la derecha */
-  margin-top: 22px; /* Mueve el icono un poco hacia abajo */
+.chevron-icon-reportes {
+  margin-left: 62px; 
+  margin-top: 18px;
+  font-size: 1.4rem; 
 }
-.prestamos-icon {
-  margin-left: 59px; /* Mueve el icono un poco a la derecha */
-  margin-top: 22px; /* Mueve el icono un poco hacia abajo */
+.chevron-icon-prestamos {
+  margin-left: 52px; 
+  margin-top: 18px;
+  font-size: 1.4rem; 
 }
-.administracion-icon {
-  margin-left: 27px; /* Mueve el icono un poco a la derecha */
-  margin-top: 22px; /* Mueve el icono un poco hacia abajo */
+.chevron-icon-admin {
+  margin-left: 20px; 
+  margin-top: 18px;
+  font-size: 1.4rem; 
 }
-.mobile-icon {
-  margin-left: 85px; /* Mueve el icono un poco a la derecha */
-  margin-top: 22px; /* Mueve el icono un poco hacia abajo */
+.chevron-icon-mobil {
+  margin-left: 80px; 
+  margin-top: 18px;
+  font-size: 1.4rem; 
 }
 .confi-icon {
   margin-left: 33px; /* Mueve el icono un poco a la derecha */
@@ -115,6 +121,9 @@ body {
 
 .options input[type="radio"] {
   display: none;
+}
+.options label {
+  font-size: 15px; 
 }
 
 .options label {

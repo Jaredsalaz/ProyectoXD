@@ -1,11 +1,13 @@
 //dropdown
 document.addEventListener('DOMContentLoaded', function() {
-  const dropdownToggle = document.querySelector('.dropdown-toggle');
-  const usuarioIcon = document.querySelector('.usuario-icon');
+  const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+  const icons = document.querySelectorAll('.usuario-icon, .adm-creditos-icon, .reportes-icon, .prestamos-icon, .administracion-icon, .mobile-icon');
 
-  dropdownToggle.addEventListener('click', function(event) {
-    event.preventDefault();
-    usuarioIcon.classList.toggle('show-dropdown');
+  dropdownToggles.forEach((dropdownToggle, index) => {
+    dropdownToggle.addEventListener('click', function(event) {
+      event.preventDefault();
+      icons[index].classList.toggle('show-dropdown');
+    });
   });
 });
 
