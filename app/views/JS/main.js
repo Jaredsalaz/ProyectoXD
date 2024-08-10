@@ -57,6 +57,14 @@ document.addEventListener('DOMContentLoaded', function() {
     window.location.href = 'referencias-prestamos.html'; 
   });
 });
+//fraudes
+document.addEventListener('DOMContentLoaded', function() {
+  const option1Label = document.querySelector('label[for="administracion-option-1"]');
+
+  option1Label.addEventListener('click', function() {
+    window.location.href = 'fraudes.html'; 
+  });
+});
 
 //dropdown
 document.addEventListener('DOMContentLoaded', function() {
