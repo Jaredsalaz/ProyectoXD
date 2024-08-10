@@ -23,7 +23,14 @@ document.addEventListener('DOMContentLoaded', function() {
     window.location.href = 'act-cheques.html'; 
   });
 });
+//redireje a liquidar
+document.addEventListener('DOMContentLoaded', function() {
+  const option1Label = document.querySelector('label[for="adm-option-3"]');
 
+  option1Label.addEventListener('click', function() {
+    window.location.href = 'act-liquido.html'; 
+  });
+});
 
 
 //dropdown
