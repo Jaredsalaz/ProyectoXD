@@ -8,7 +8,7 @@
     <title>Responsive Admin Dashboard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!-- ======= Styles ====== -->
-    <link rel="stylesheet" href="CSS/act-liquido.css">
+    <link rel="stylesheet" href="CSS/referencias-prestamos.css">
 </head>
 
 <body>
@@ -156,7 +156,7 @@
             <div id="myModal" class="modal2">
                 <div class="modal-content">
                     <div class="title">
-                        <h2><em>ASIGNA LIQUIDO</em></h2>
+                        <h2><em>CAPTURA DE CHEQUES</em></h2>
                     </div>
                     
                     <!-- Texto de Refinanciamiento -->
@@ -200,7 +200,7 @@
 
             <div class="title">
                 <i class="fa-solid fa-chevron-left" onclick="window.location.href='menu.html';"></i>
-                <h2><em>ASIGNA LIQUIDO</em></h2>
+                <h2><em>REFERENCIAS BANCARIAS PRÉSTAMOS</em></h2>
             </div>
         
 
@@ -208,12 +208,12 @@
             <!-- ================ Order Details List ================= -->
             <div class="details">
                 <div class="recentOrders">
-                    <div class="cardBox">
+                    <div class="cardBox2">
                         <div class="input">
                             <div class="Tnombre">Etapa</div>
                             <div class="select-container">
                                 <select id="input2">
-                                    <option value="" disabled>Seleccione el descuento</option>
+                                    <option value="" disabled>Seleccione la etapa</option>
                                     <option value="soltero" selected>Temporal</option>
                                     <option value="casado">Permanente</option>
                                     <!-- Agregar más opciones -->
@@ -221,190 +221,10 @@
                                 <i class="fa-solid fa-angle-down"></i>
                             </div>
                         </div>
-                        <div class="boton-buscar">
-                            <!-- Botón para abrir la modal -->
-                            <button type="button" id="openModalBtn">Cargar Creditos</button>
+                        <div class="boton-buscar2">
+                            <button type="button">Imprimir</button>
                         </div>
-                        
-
                     </div>
-                    
-                    <table>
-                        <thead>
-                            <tr>
-                                <td>RFC</td>
-                                <td>CURP</td>
-                                <td>Nombre</td>
-                                <td>Captital</td>
-                                <td>Plazo</td>
-                                <td>Liquido</td>
-                                <td>Asignar</td>
-                            </tr>
-                        </thead>
-                    
-                        <tbody>
-                            <tr>
-                                <td>Eugenia Martinez Gustamante</td>
-                                <td>60%</td>
-                                <td>Mamá</td>
-                                <td>09/08/2024</td>
-                                <td>ACTIVO</td>
-                                <td><input type="text" placeholder="Ingrese valor"></td>
-                                <td>
-                                    <div class="editar-modal-b icon-container">
-                                        <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
-                                    </div>
-                                </td>
-                            </tr>
-                    
-                            <tr>
-                                <td>93940323</td>
-                                <td>XNIWE9NC9</td>
-                                <td>UIFNBV933RR933F</td>
-                                <td>9/08/2024</td>
-                                <td>ACTIVO</td>
-                                <td><input type="text" placeholder="Ingrese valor"></td>
-                                <td>
-                                    <div class="editar-modal-b icon-container">
-                                        <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
-                                    </div>
-                                </td>
-                            </tr>
-                    
-                            <tr>
-                                <td>299842221</td>
-                                <td>NCENW29NE</td>
-                                <td>HXIXHHEH822C2XJ</td>
-                                <td>9/08/2024</td>
-                                <td>ACTIVO</td>
-                                <td><input type="text" placeholder="Ingrese valor"></td>
-                                <td>
-                                    <div class="editar-modal-b icon-container">
-                                        <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
-                                    </div>
-                                </td>
-                            </tr>
-                    
-                            <tr>
-                                <td>983927212</td>
-                                <td>JDC92CM92C2</td>
-                                <td>CJIDJ93ICN39</td>
-                                <td>09/08/2024</td>
-                                <td>ACTIVO</td>
-                                <td><input type="text" placeholder="Ingrese valor"></td>
-                                <td>
-                                    <div class="editar-modal-b icon-container">
-                                        <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
-                                    </div>
-                                </td>
-                            </tr>
-                    
-                            <tr>
-                                <td>Star Refrigerator</td>
-                                <td>$1200</td>
-                                <td>Paid</td>
-                                <td>08/08/2024</td>
-                                <td>ACTIVO</td>
-                                <td><input type="text" placeholder="Ingrese valor"></td>
-                                <td>
-                                    <div class="editar-modal-b icon-container">
-                                        <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
-                                    </div>
-                                </td>
-                            </tr>
-                    
-                            <tr>
-                                <td>Dell Laptop</td>
-                                <td>$110</td>
-                                <td>Due</td>
-                                <td>08/08/2024</td>
-                                <td>ACTIVO</td>
-                                <td><input type="text" placeholder="Ingrese valor"></td>
-                                <td>
-                                    <div class="editar-modal-b icon-container">
-                                        <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
-                                    </div>
-                                </td>
-                            </tr>
-                    
-                            <tr>
-                                <td>Apple Watch</td>
-                                <td>$1200</td>
-                                <td>Paid</td>
-                                <td>08/08/2024</td>
-                                <td>ACTIVO</td>
-                                <td><input type="text" placeholder="Ingrese valor"></td>
-                                <td>
-                                    <div class="editar-modal-b icon-container">
-                                        <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
-                                    </div>
-                                </td>
-                            </tr>
-                    
-                            <tr>
-                                <td>Addidas Shoes</td>
-                                <td>$620</td>
-                                <td>Due</td>
-                                <td>08/08/2024</td>
-                                <td>ACTIVO</td>
-                                <td><input type="text" placeholder="Ingrese valor"></td>
-                                <td>
-                                    <div class="editar-modal-b icon-container">
-                                        <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Addidas Shoes</td>
-                                <td>$620</td>
-                                <td>Due</td>
-                                <td>08/08/2024</td>
-                                <td>ACTIVO</td>
-                                <td><input type="text" placeholder="Ingrese valor"></td>
-                                <td>
-                                    <div class="editar-modal-b icon-container">
-                                        <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Addidas Shoes</td>
-                                <td>$620</td>
-                                <td>Due</td>
-                                <td>08/08/2024</td>
-                                <td>ACTIVO</td>
-                                <td><input type="text" placeholder="Ingrese valor"></td>
-                                <td>
-                                    <div class="editar-modal-b icon-container">
-                                        <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <!-- Paginador -->
-                    <div class="button-container">
-                      <button class="button-3d">
-                        <div class="button-top">
-                          <span class="material-icons">❮</span>
-                        </div>
-                        <div class="button-bottom"></div>
-                        <div class="button-base"></div>
-                      </button>
-                        <div class="page-indicator">
-                          Página <span id="current-page" class="page-number">1</span>
-                        </div>
-                      <button class="button-3d">
-                        <div class="button-top">
-                          <span class="material-icons">❯</span>
-                        </div>
-                        <div class="button-bottom"></div>
-                        <div class="button-base"></div>
-                      </button>
-                    </div>
-                    
-                    
-                    
                 </div>
 
                 <!-- ================= New Customers ================ -->
@@ -413,7 +233,7 @@
     </div>
 
     <!-- =========== Scripts =========  -->
-    <script src="JS/act-liquido.js"></script>
+    <script src="JS/referencias-prestamos.js"></script>
 
     <!-- ====== ionicons ======= -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

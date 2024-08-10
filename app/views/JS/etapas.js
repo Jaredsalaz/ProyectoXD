@@ -1,22 +1,63 @@
-
-
-//redirecionar a la pagina de cambio de contraseña y demas paginas 
+//redirecionar a la pagina de cambio de contraseña
 document.addEventListener('DOMContentLoaded', function() {
-    const option1Label = document.querySelector('label[for="option-1"]');
-  
-    option1Label.addEventListener('click', function() {
-      window.location.href = 'cambio-contraseña.html'; 
-    });
+  const option1Label = document.querySelector('label[for="option-1"]');
+
+  option1Label.addEventListener('click', function() {
+    window.location.href = 'cambio-contraseña.html'; 
   });
-  
-  //redirecionar a la pagina de cambio de contraseña
-document.addEventListener('DOMContentLoaded', function() {
-    const option1Label = document.querySelector('label[for="adm-option-1"]');
-  
-    option1Label.addEventListener('click', function() {
-      window.location.href = 'etapas.html'; 
-    });
 });
+
+//redirecionar a la pagina de etapas
+document.addEventListener('DOMContentLoaded', function() {
+  const option1Label = document.querySelector('label[for="adm-option-1"]');
+
+  option1Label.addEventListener('click', function() {
+    window.location.href = 'etapas.html'; 
+  });
+});
+//redirecionar a la pagina de cambio de act-cheques
+document.addEventListener('DOMContentLoaded', function() {
+  const option1Label = document.querySelector('label[for="adm-option-2"]');
+
+  option1Label.addEventListener('click', function() {
+    window.location.href = 'act-cheques.html'; 
+  });
+});
+//redireje a liquidar
+document.addEventListener('DOMContentLoaded', function() {
+  const option1Label = document.querySelector('label[for="adm-option-3"]');
+
+  option1Label.addEventListener('click', function() {
+    window.location.href = 'act-liquido.html'; 
+  });
+});
+//PDF
+document.addEventListener('DOMContentLoaded', function() {
+  const option1Label = document.querySelector('label[for="adm-option-4"]');
+
+  option1Label.addEventListener('click', function() {
+    window.location.href = 'PDF-cheques.html'; 
+  });
+});
+
+//cheuqes difunciones
+document.addEventListener('DOMContentLoaded', function() {
+  const option1Label = document.querySelector('label[for="adm-option-5"]');
+
+  option1Label.addEventListener('click', function() {
+    window.location.href = 'cheques-difunciones.html'; 
+  });
+});
+
+//referencias prestamos
+document.addEventListener('DOMContentLoaded', function() {
+  const option1Label = document.querySelector('label[for="adm-option-6"]');
+
+  option1Label.addEventListener('click', function() {
+    window.location.href = 'referencias-prestamos.html'; 
+  });
+});
+
 
 //dropdown
 document.addEventListener('DOMContentLoaded', function() {

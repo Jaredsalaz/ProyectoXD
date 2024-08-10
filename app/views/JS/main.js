@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-//redirecionar a la pagina de cambio de contraseña
+//redirecionar a la pagina de etapas
 document.addEventListener('DOMContentLoaded', function() {
   const option1Label = document.querySelector('label[for="adm-option-1"]');
 
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.location.href = 'etapas.html'; 
   });
 });
-//redirecionar a la pagina de cambio de contraseña
+//redirecionar a la pagina de cheques
 document.addEventListener('DOMContentLoaded', function() {
   const option1Label = document.querySelector('label[for="adm-option-2"]');
 
@@ -49,6 +49,14 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+//referencias prestamos
+document.addEventListener('DOMContentLoaded', function() {
+  const option1Label = document.querySelector('label[for="adm-option-6"]');
+
+  option1Label.addEventListener('click', function() {
+    window.location.href = 'referencias-prestamos.html'; 
+  });
+});
 
 //dropdown
 document.addEventListener('DOMContentLoaded', function() {
