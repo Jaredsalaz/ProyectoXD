@@ -7,6 +7,16 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+//redirecionar a la pagina de cambio de contraseña
+document.addEventListener('DOMContentLoaded', function() {
+  const option1Label = document.querySelector('label[for="adm-option-1"]');
+
+  option1Label.addEventListener('click', function() {
+    window.location.href = 'etapas.html'; 
+  });
+});
+
+
 
 //dropdown
 document.addEventListener('DOMContentLoaded', function() {

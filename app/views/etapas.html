@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="CSS/etapas.css">
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <img class="large-logo" src="img/Logo fabes blanco.png" alt="Large Logo">
+                            <img class="small-logo" src="img/Icono fabes blanco.png" alt="Small Logo">
+                        </span>
+                    </a>
+                    
+                </li>
+
+                <li class="hovered">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Inicio</span>
+                        <i class="fas fa-chevron-down inicio-icon"></i>
+                    </a>
+                </li>
+
+                <li class="usuario-icon">
+                  <a href="#" class="dropdown-toggle">
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <span class="title">Usuarios</span>
+                    <ion-icon name="chevron-down-outline" class="chevron-icon-usuarios"></ion-icon>
+                  </a>
+                  <div class="select">
+                    <div class="options">
+                      <input type="radio" name="option" id="option-1">
+                      <label for="option-1" data-txt="Opción 1">Cambio de contraseña</label>
+                    </div>
+                  </div>
+                </li>
+                
+                <li class="adm-creditos-icon">
+                  <a href="#" class="dropdown-toggle">
+                    <span class="icon"><ion-icon name="card-outline"></ion-icon></span>
+                    <span class="title">Adm Créditos</span>
+                    <ion-icon name="chevron-down-outline" class="chevron-icon-creditos"></ion-icon>
+                  </a>
+                  <div class="select">
+                    <div class="options">
+                      <input type="radio" name="adm-option" id="adm-option-1">
+                      <label for="adm-option-1" data-txt="Crédito 1">Etapas</label>
+                      <input type="radio" name="adm-option" id="adm-option-2">
+                      <label for="adm-option-2" data-txt="Crédito 2">Act Cheques</label>
+                      <input type="radio" name="adm-option" id="adm-option-3">
+                      <label for="adm-option-3" data-txt="Crédito 3">Act Liquido</label>
+                      <label for="adm-option-4" data-txt="Crédito 4">PDF Cheques</label>
+                        <label for="adm-option-5" data-txt="Crédito 5">Cheques Defunciones</label>
+                        <label for="adm-option-6" data-txt="Crédito 6">Referencias Prestamos</label>
+                    </div>
+                  </div>
+                </li>
+                
+                <li class="reportes-icon">
+                  <a href="#" class="dropdown-toggle">
+                    <span class="icon"><ion-icon name="pie-chart-outline"></ion-icon></span>
+                    <span class="title">Reportes</span>
+                    <ion-icon name="chevron-down-outline" class="chevron-icon-reportes"></ion-icon>
+                  </a>
+                  <div class="select">
+                    <div class="options">
+                      <input type="radio" name="reportes-option" id="reportes-option-1">
+                      <label for="reportes-option-1" data-txt="Reporte 1">Generales</label>
+                    </div>
+                  </div>
+                </li>
+                
+                <li class="prestamos-icon">
+                  <a href="#" class="dropdown-toggle">
+                    <span class="icon"><ion-icon name="logo-usd"></ion-icon></span>
+                    <span class="title">Prestamos</span>
+                    <ion-icon name="chevron-down-outline" class="chevron-icon-prestamos"></ion-icon>
+                  </a>
+                  <div class="select">
+                    <div class="options">
+                      <input type="radio" name="prestamos-option" id="prestamos-option-1">
+                      <label for="prestamos-option-1" data-txt="Préstamo 1">Becas</label>
+                    </div>
+                  </div>
+                </li>
+                
+                <li class="administracion-icon">
+                  <a href="#" class="dropdown-toggle">
+                    <span class="icon"><ion-icon name="folder-outline"></ion-icon></span>
+                    <span class="title">Administración</span>
+                    <ion-icon name="chevron-down-outline" class="chevron-icon-admin"></ion-icon>
+                  </a>
+                  <div class="select">
+                    <div class="options">
+                      <input type="radio" name="administracion-option" id="administracion-option-1">
+                      <label for="administracion-option-1" data-txt="Admin 1">Fraudes</label>
+                      <input type="radio" name="administracion-option" id="administracion-option-2">
+                      <label for="administracion-option-2" data-txt="Admin 2">Caja De Hhorro</label>
+                    </div>
+                  </div>
+                </li>
+                
+                <li class="mobile-icon">
+                  <a href="#" class="dropdown-toggle">
+                    <span class="icon"><ion-icon name="phone-portrait-outline"></ion-icon></span>
+                    <span class="title">Mobile</span>
+                    <ion-icon name="chevron-down-outline" class="chevron-icon-mobil"></ion-icon>
+                  </a>
+                  <div class="select">
+                    <div class="options">
+                      <input type="radio" name="mobile-option" id="mobile-option-1">
+                      <label for="mobile-option-1" data-txt="Mobile 1">Estatus</label>
+                      <input type="radio" name="mobile-option" id="mobile-option-2">
+                    </div>
+                  </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">Configuración</span>
+                        <i class="fas fa-chevron-down confi-icon"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Cerrar Sesión</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div id="confirmModal" style="display:none;">
+                <i class="fa-regular fa-circle-question"></i>
+                <p>Desea eliminar beneficiario</p>
+                <button id="cancelButton">Cancelar</button>
+                <button id="acceptButton">Eliminar</button>
+            </div>
+            <!-- Modal -->
+            <div id="myModal" class="modal2">
+                <div class="modal-content">
+                    <div class="title">
+                        <h2><em>NUEVA ETAPA</em></h2>
+                    </div>
+                    
+                    <div class="cardBox4">
+                        <div class="input">
+                            <div class="Tnombre">Quincena</div>
+                            <input type="text" placeholder="Escribe la Quincena" id="inputNombre">
+                        </div>
+                        <div class="input">
+                            <div class="Tnombre">Etapa</div>
+                            <input type="text" placeholder="Escribe la Etapa" id="inputNombre">
+                        </div>
+                    </div>
+                    <div class="boton-buscar2">
+                        <button type="button" id="cerrar-modal2" class="boton-atras">Cancelar</button>
+                        <button type="button">Guardar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <div class="nombre">
+                    <h2>Hola, Jhovanny</h2>
+                </div>
+
+
+                <div class="campana">
+                    <i class="fas fa-bell"></i> <!-- Icono de campana -->
+                    <div class="notification-dot"></div> <!-- Punto de notificación -->
+                    <div id="notification-modal" class="modal"> <!-- Modal de notificación -->
+                        <i class="fas fa-times close"></i> <!-- Botón de cierre con icono -->
+                        <p>Tienes una nueva notificación</p> <!-- Notificación de prueba -->
+                        <p>Un cliente</p>
+                    </div>
+                </div>
+
+                <div class="user">
+                    <img src="img/customer01.jpg" alt="">
+                </div>
+                <p class="nombre-usuario">Jhovanni Torres</p> <!-- Nombre del usuario -->
+                <p class="titulo-usuario">Encargado</p> <!-- Título del usuario -->
+            </div>
+
+            <div class="title">
+                <i class="fa-solid fa-chevron-left" onclick="window.location.href='menu.html';"></i>
+                <h2><em>LISTADO DE ETAPAS</em></h2>
+            </div>
+        
+
+            
+            <!-- ================ Order Details List ================= -->
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardBox2">
+                        <div class="boton-buscar">
+                            <!-- Botón para abrir la modal -->
+                            <button type="button" id="openModalBtn">Nueva Etapa</button>
+                        </div>
+                    </div>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Qna Proceso</td>
+                                <td>Etapa</td>
+                                <td>Instrucción</td>
+                                <td>fecha</td>
+                                <td>Estatus</td>
+                                <td>Cambiar Estatus</td>
+                                <td>Asignar No.Instrucción</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Eugenia Martinez Gustamante</td>
+                                <td>60%</td>
+                                <td>Mamá</td>
+                                <td>
+                                    09/08/2024
+                                </td>
+                                <td>
+                                    ACTIVO
+                                </td>
+                                <td>
+                                    <div class="icon-container">
+                                        <i class="fas fa-exchange-alt"></i> <!-- Icono de cambio de estatus -->
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="editar-modal-b icon-container">
+                                        <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>93940323</td>
+                                <td>XNIWE9NC9</td>
+                                <td>UIFNBV933RR933F</td>
+                                <td>
+                                    9/08/2024
+                                </td>
+                                <td>
+                                    ACTIVO
+                                </td>
+                                <td>
+                                    <div class="icon-container">
+                                        <i class="fas fa-exchange-alt"></i> <!-- Icono de cambio de estatus -->
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="editar-modal-b icon-container">
+                                        <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>299842221</td>
+                                <td>NCENW29NE</td>
+                                <td>HXIXHHEH822C2XJ</td>
+                                <td>
+                                    9/08/2024
+                                </td>
+                                <td>
+                                    ACTIVO
+                                </td>
+                                <td>
+                                    <div class="icon-container">
+                                        <i class="fas fa-exchange-alt"></i> <!-- Icono de cambio de estatus -->
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="editar-modal-b icon-container">
+                                        <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>983927212</td>
+                                <td>JDC92CM92C2</td>
+                                <td>CJIDJ93ICN39</td>
+                                <td>
+                                    09/08/2024
+                                </td>
+                                <td>
+                                    ACTIVO
+                                </td>
+                                <td>
+                                    <div class="icon-container">
+                                        <i class="fas fa-exchange-alt"></i> <!-- Icono de cambio de estatus -->
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="editar-modal-b icon-container">
+                                        <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Star Refrigerator</td>
+                                <td>$1200</td>
+                                <td>Paid</td>
+                                <td>
+                                    08/08/2024
+                                </td>
+                                <td>
+                                    ACTIVO
+                                </td>
+                                <td>
+                                    <div class="icon-container">
+                                        <i class="fas fa-exchange-alt"></i> <!-- Icono de cambio de estatus -->
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="editar-modal-b icon-container">
+                                        <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Dell Laptop</td>
+                                <td>$110</td>
+                                <td>Due</td>
+                                <td>
+                                    08/08/2024
+                                </td>
+                                <td>
+                                    ACTIVO
+                                </td>
+                                <td>
+                                    <div class="icon-container">
+                                        <i class="fas fa-exchange-alt"></i> <!-- Icono de cambio de estatus -->
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="editar-modal-b icon-container">
+                                        <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Apple Watch</td>
+                                <td>$1200</td>
+                                <td>Paid</td>
+                                <td>
+                                    08/08/2024
+                                </td>
+                                <td>
+                                    ACTIVO
+                                </td>
+                                <td>
+                                    <div class="icon-container">
+                                        <i class="fas fa-exchange-alt"></i> <!-- Icono de cambio de estatus -->
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="editar-modal-b icon-container">
+                                        <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Addidas Shoes</td>
+                                <td>$620</td>
+                                <td>Due</td>
+                                <td>
+                                    08/08/2024
+                                </td>
+                                <td>
+                                    ACTIVO
+                                </td> 
+                                <td>
+                                    <div class="icon-container">
+                                        <i class="fas fa-exchange-alt"></i> <!-- Icono de cambio de estatus -->
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="editar-modal-b icon-container">
+                                        <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Addidas Shoes</td>
+                                <td>$620</td>
+                                <td>Due</td>
+                                <td>
+                                    08/08/2024
+                                </td>
+                                <td>
+                                    ACTIVO
+                                </td> 
+                                <td>
+                                    <div class="icon-container">
+                                        <i class="fas fa-exchange-alt"></i> <!-- Icono de cambio de estatus -->
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="editar-modal-b icon-container">
+                                        <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Addidas Shoes</td>
+                                <td>$620</td>
+                                <td>Due</td>
+                                <td>
+                                    08/08/2024
+                                </td>
+                                <td>
+                                    ACTIVO
+                                </td> 
+                                <td>
+                                    <div class="icon-container">
+                                        <i class="fas fa-exchange-alt"></i> <!-- Icono de cambio de estatus -->
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="editar-modal-b icon-container">
+                                        <i class="fas fa-pencil-alt"></i> <!-- Icono de lápiz -->
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- Paginador -->
+                    <div class="button-container">
+                      <button class="button-3d">
+                        <div class="button-top">
+                          <span class="material-icons">❮</span>
+                        </div>
+                        <div class="button-bottom"></div>
+                        <div class="button-base"></div>
+                      </button>
+                        <div class="page-indicator">
+                          Página <span id="current-page" class="page-number">1</span>
+                        </div>
+                      <button class="button-3d">
+                        <div class="button-top">
+                          <span class="material-icons">❯</span>
+                        </div>
+                        <div class="button-bottom"></div>
+                        <div class="button-base"></div>
+                      </button>
+                    </div>
+                    
+                    
+                    
+                </div>
+
+                <!-- ================= New Customers ================ -->
+            </div>
+        </div>
+    </div>
+
+    <!-- =========== Scripts =========  -->
+    <script src="JS/etapas.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
