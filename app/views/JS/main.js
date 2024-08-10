@@ -31,6 +31,14 @@ document.addEventListener('DOMContentLoaded', function() {
     window.location.href = 'act-liquido.html'; 
   });
 });
+//PDF
+document.addEventListener('DOMContentLoaded', function() {
+  const option1Label = document.querySelector('label[for="adm-option-4"]');
+
+  option1Label.addEventListener('click', function() {
+    window.location.href = 'PDF-cheques.html'; 
+  });
+});
 
 
 //dropdown
