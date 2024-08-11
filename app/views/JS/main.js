@@ -65,6 +65,14 @@ document.addEventListener('DOMContentLoaded', function() {
     window.location.href = 'fraudes.html'; 
   });
 });
+//caja de ahorro
+document.addEventListener('DOMContentLoaded', function() {
+  const option1Label = document.querySelector('label[for="administracion-option-2"]');
+
+  option1Label.addEventListener('click', function() {
+    window.location.href = 'caja-ahorro.html'; 
+  });
+});
 
 //dropdown
 document.addEventListener('DOMContentLoaded', function() {
